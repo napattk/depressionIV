@@ -1,0 +1,333 @@
+line,subject,tier2,tier3,tier1,tmin,tmax
+1,CF36WOM_12,noise,?,{noise},0,0.802
+2,CF36WOM_12,clause1_exp-s1,exp,"""allora Maria mi vuoi parlare della tua famiglia?""",0.802,3.311
+3,CF36WOM_12,silV-s,?,(.)v,3.311,3.945
+4,CF36WOM_12,fil,?,:e,3.945,4.218
+5,CF36WOM_12,clause1-s1,sub,si,4.218,4.608
+6,CF36WOM_12,silV-e,?,(.)v,4.608,5.689
+7,CF36WOM_12,fil,?,:a,5.689,5.953
+8,CF36WOM_12,clause2_exp-s1,exp,"""mi dici"" ",5.953,6.563
+9,CF36WOM_12,len_exp,?,:::i_exp,6.563,6.804
+10,CF36WOM_12,clause2_exp-s2,exp,"""sei madre di qualche bambi/""",6.804,8.306
+11,CF36WOM_12,len_exp,?,:::i_exp,8.306,8.472
+12,CF36WOM_12,ove,?,[],8.472,8.774
+13,CF36WOM_12,clause2-s1,sub,due,8.774,8.968
+14,CF36WOM_12,len,f,:::e,8.968,9.082
+15,CF36WOM_12,clause2-s2,sub,baimb- bambini sono grandi ,9.082,10.803
+16,CF36WOM_12,lau,?,[l],10.803,11.08
+17,CF36WOM_12,clause2-s3,sub,tutti e due ,11.08,11.738
+18,CF36WOM_12,sil,?,(.),11.738,11.892
+19,CF36WOM_12,clause3-s1,sub,due maschi,11.892,12.651
+20,CF36WOM_12,silV-e,?,(.)v,12.651,13.653
+21,CF36WOM_12,clause3_exp-s1,exp,"""quanti anni hanno?""",13.653,14.651
+22,CF36WOM_12,fil,?,:o,14.651,14.773
+23,CF36WOM_12,clause4-s1,sub, il primo 22 e il secondo 18,14.773,17.571
+24,CF36WOM_12,clause4_exp-s1,exp,"""che fanno loro?""",17.571,18.476
+25,CF36WOM_12,clause5-s1,sub,il primo,18.476,19.36
+26,CF36WOM_12,len,f,:::o,19.36,19.505
+27,CF36WOM_12,clause5-s2,sub,sta al terzo anno chimico,19.505,20.172
+28,CF36WOM_12,len,s,:::a,20.172,20.308
+29,CF36WOM_12,clause5-s3,sub,an,20.308,20.558
+30,CF36WOM_12,len,m,:::n,20.558,20.699
+31,CF36WOM_12,clause5-s4,sub,no,20.699,20.848
+32,CF36WOM_12,len,f,:::o,20.848,21.164
+33,CF36WOM_12,clause5-s5,sub,chimico,21.164,21.875
+34,CF36WOM_12,sil,?,(.),21.875,22.635
+35,CF36WOM_12,fil,?,:e,22.635,22.944
+36,CF36WOM_12,clause5-s6,sub,il secondo invece il quarto anno scientifico,22.944,25.419
+37,CF36WOM_12,silV-e,?,(.)v,25.419,25.617
+38,CF36WOM_12,clause5_exp-s1,exp,"""che tipo di ragazzi sono"" ",25.617,27.126
+39,CF36WOM_12,len_exp,?,:::o_exp,27.126,27.324
+40,CF36WOM_12,clause5_exp-s2,exp,"""i tuoi figli?""",27.324,28.117
+41,CF36WOM_12,silV-s,?,(.)v,28.117,28.917
+42,CF36WOM_12,clause6-s1,sub,fin d'oggi nessun proble/,28.917,30.177
+43,CF36WOM_12,len,m,:::e,30.177,30.33
+44,CF36WOM_12,clause6-s2,sub,ma,30.33,30.497
+45,CF36WOM_12,clause7-s1,sub,studiano ringraziando il Di/,30.497,32.422
+46,CF36WOM_12,len,m,:::i,32.422,32.558
+47,CF36WOM_12,clause7-s2,sub,o,32.558,32.773
+48,CF36WOM_12,fil,?,:e,32.773,33.715
+49,CF36WOM_12,clause8-s1,sub,niente,33.715,34.395
+50,CF36WOM_12,fil,?,:m,34.395,34.711
+51,CF36WOM_12,sil,?,(.),34.711,35.071
+52,CF36WOM_12,clause8-s2,sub,cuor di mamma tranquilli,35.071,36.432
+53,CF36WOM_12,silV-e,?,(.)v,36.432,37.122
+54,CF36WOM_12,clause6_exp-s1,exp,"""e mi vuoi parlare"" ",37.122,38.132
+55,CF36WOM_12,sil_exp,?,:::e_exp,38.132,38.514
+56,CF36WOM_12,clause6_exp-s2,exp,"""di un""",38.514,39.062
+57,CF36WOM_12,len_exp,?,:::n_exp,39.062,39.48
+58,CF36WOM_12,clause6_exp-s3,exp,"""un film che ti piace particolarmente di un canta/""",39.48,42.234
+59,CF36WOM_12,len_exp,?,:::a_exp,42.234,42.453
+60,CF36WOM_12,clause6_exp-s4,exp,"""ante""",42.453,42.743
+61,CF36WOM_12,len_exp,?,:::e_exp,42.743,43.083
+62,CF36WOM_12,silV-s,?,(.)v,43.083,43.852
+63,CF36WOM_12,fil,?,:e,43.852,44.088
+64,CF36WOM_12,clause9-s1,sub,a me piacciono molto i cantanti anni 60 tipo i Pooh,44.088,46.893
+65,CF36WOM_12,sil,?,(.),46.893,47.48
+66,CF36WOM_12,clause10-s1,sub,sono antiquariata ma,47.48,48.718
+67,CF36WOM_12,sil,?,(.),48.718,49.192
+68,CF36WOM_12,clause9-s2,sub,i Pooh,49.192,49.788
+69,CF36WOM_12,fil,?,:e,49.788,49.933
+70,CF36WOM_12,clause9-s3,sub,i Dic Dic ,49.933,51.255
+71,CF36WOM_12,clause11-s1,sub,mi piacciono tanto,51.255,52.368
+72,CF36WOM_12,clause11-s2,sub,sono romantica,52.368,53.264
+73,CF36WOM_12,silV-e,?,(.)s,53.264,53.769
+74,CF36WOM_12,len_exp,?,:::e_exp,53.769,54.015
+75,CF36WOM_12,clause7_exp-s1,exp,"""e tuo marito che lavoro fa?""",54.015,55.602
+76,CF36WOM_12,clause12-s1,sub,lui e' un pescatore,55.602,56.791
+77,CF36WOM_12,silV-e,?,(.)v,56.791,57.59
+78,CF36WOM_12,clause8_exp-s1,exp,"""e come vivi il fatto che sia un pescato?""",57.59,60.425
+79,CF36WOM_12,ove,?,[],60.425,60.787
+80,CF36WOM_12,clause12-s1,sub,quilla,60.787,61.194
+81,CF36WOM_12,sil,?,(.),61.194,61.557
+82,CF36WOM_12,clause12-s2,sub,tranquilla,61.557,62.23
+83,CF36WOM_12,sil,?,(.),62.23,63.063
+84,CF36WOM_12,clause9_exp-s1,exp,"""e' un lavoro duro?""",63.063,64.199
+85,CF36WOM_12,len_exp,?,:::o_exp,64.199,64.366
+86,CF36WOM_12,clause13-s1,sub,durissimo,64.366,65.255
+87,CF36WOM_12,fil,?,:e,65.255,66.08
+88,CF36WOM_12,clause13-s2,sub,molto,66.08,66.53
+89,CF36WOM_12,len,f,:::o,66.53,66.92
+90,CF36WOM_12,clause13-s3,sub,sacrificato,66.92,67.741
+91,CF36WOM_12,clause14-s1,sub,pecche' non c'e' mai,67.741,68.922
+92,CF36WOM_12,sil,?,(.),68.922,69.186
+93,CF36WOM_12,clause14-s2,sub,appunto per il mestiere pero',69.186,70.675
+94,CF36WOM_12,len,f,:::o,70.675,71.024
+95,CF36WOM_12,sil,?,(.),71.024,71.832
+96,CF36WOM_12,clause14-s3,sub,va bene,71.832,72.284
+97,CF36WOM_12,silV-e,?,(.)v,72.284,72.811
+98,CF36WOM_12,fil,?,:e,72.811,73.045
+99,CF36WOM_12,clause10_exp-s1,exp,"""mi vuoi raccontare come cunini"" ",73.045,74.75
+100,CF36WOM_12,len_exp,?,:::i_exp,74.75,74.957
+101,CF36WOM_12,clause10_exp-s2,exp,"""un tuo piatto che ti p-""",74.957,76.348
+102,CF36WOM_12,clause11_exp-s1,exp,"""magari domani e' domenica, che cosa prepari?""",76.348,78.914
+103,CF36WOM_12,fil,?,:e,78.914,79.18
+104,CF36WOM_12,clause15-s1,sub,domani,79.18,79.769
+105,CF36WOM_12,len,f,:::i,79.769,79.883
+106,CF36WOM_12,ove,?,[],79.883,80.023
+107,CF36WOM_12,clause12_exp-s1,exp,"""spieghi anche come li cucini questi piatti""",80.023,82.464
+108,CF36WOM_12,silV-e,?,(.)v,82.464,82.714
+109,CF36WOM_12,clause15-s2,sub,allora domani vogliono a base di pesce,82.714,84.619
+110,CF36WOM_12,sil,?,(.),84.619,84.764
+111,CF36WOM_12,clause16-s1,sub,guarda il caso,84.764,85.712
+112,CF36WOM_12,sil,?,(.),85.712,86.38
+113,CF36WOM_12,fil,?,:e,86.38,87.033
+114,CF36WOM_12,clause17-s1,sub,mi hanno chiesto,87.033,87.836
+115,CF36WOM_12,len,f,:::o,87.836,88.402
+116,CF36WOM_12,fil,?,:m,88.402,89.095
+117,CF36WOM_12,len,s,:::i,89.095,89.306
+118,CF36WOM_12,clause17-s2,sub,i pi pi polipi,89.306,90.228
+119,CF36WOM_12,sil,?,(.),90.228,90.922
+120,CF36WOM_12,clause18-s1,sub,faccio affocati ,90.922,91.794
+121,CF36WOM_12,clause19-s1,sub,e faccio anche i tubetti,91.794,92.721
+122,CF36WOM_12,sil,?,(.),92.721,93.716
+123,CF36WOM_12,clause20-s1,sub,poi faccio de,93.716,94.379
+124,CF36WOM_12,len,f,:::e,94.379,94.537
+125,CF36WOM_12,clause20-s2,sub,pesciolini che porta mio marito tipo la,94.537,96.368
+126,CF36WOM_12,len,f,:::a,96.368,96.565
+127,CF36WOM_12,clause21-s1,sub,seppie,96.565,97.197
+128,CF36WOM_12,sil,?,(.),97.197,97.302
+129,CF36WOM_12,clause21-s2,sub,con l'insa/,97.302,97.825
+130,CF36WOM_12,len,m,:::a,97.825,97.944
+131,CF36WOM_12,clause21-s3,sub,ta ,97.944,98.124
+132,CF36WOM_12,clause22-s1,sub,la faccio  fritti,98.124,99.085
+133,CF36WOM_12,sil,?,(.),99.085,99.458
+134,CF36WOM_12,clause23-s1,sub,c'e' la ra/,99.458,100.094
+135,CF36WOM_12,len,m,:::a,100.094,100.208
+136,CF36WOM_12,clause23-s2,sub,ia,100.208,100.542
+137,CF36WOM_12,clause24-s1,sub,tutte queste cose qua,100.542,101.446
+138,CF36WOM_12,silV-e,?,(.)v,101.446,102.228
+139,CF36WOM_12,clause13_exp-s1,exp,"""ho capito""",102.228,102.995
+140,CF36WOM_12,fil_exp,?,:e_exp,102.995,103.57
+141,CF36WOM_12,clause14_exp-s1,exp,"""mi vuoi parlare di una citta' che ti piace""",103.57,105.954
+142,CF36WOM_12,clause15_exp-s1,exp,"""che hai visto nella tua vita?""",105.954,107.742
+143,CF36WOM_12,sil,?,(.),107.742,108.401
+144,CF36WOM_12,clause25-s1,sub,a me piace Salerno,108.401,109.521
+145,CF36WOM_12,clause16_exp-s1,exp,"""Salerno""",109.521,110.198
+146,CF36WOM_12,ove,?,[],110.198,110.536
+147,CF36WOM_12,clause16_exp-s2,exp,"""ti piace?""",110.536,111.284
+148,CF36WOM_12,fil,?,:e,111.284,112
+149,CF36WOM_12,sil,?,(.),112,112.285
+150,CF36WOM_12,clause26-s1,sub,nata cresciuta,112.285,113.339
+151,CF36WOM_12,sil,?,(.),113.339,114.155
+152,CF36WOM_12,ove,?,[],114.155,114.381
+153,CF36WOM_12,clause17_exp-s1,exp,"""e che cosa ti ricordi della tua""",114.381,115.808
+154,CF36WOM_12,len_exp,?,:::a_exp,115.808,116.493
+155,CF36WOM_12,clause17_exp-s2,exp,"""della tua adolescenza?""",116.493,118.424
+156,CF36WOM_12,fil,?,:eh,118.424,118.863
+157,CF36WOM_12,clause27-s1,sub,tante cose belle ovvio,118.863,120.572
+158,CF36WOM_12,ove,?,[],120.572,121.19
+159,CF36WOM_12,clause28-s1,sub,i miei genitori,121.19,122.068
+160,CF36WOM_12,sil,?,(.),122.068,122.2
+161,CF36WOM_12,clause28-s2,sub,che c'erano tutti e due e' la cosa principale,122.2,124.18
+162,CF36WOM_12,sil,?,(.),124.18,124.819
+163,CF36WOM_12,clause29-s1,sub,e' questo che mi manca oggi,124.819,126.272
+164,CF36WOM_12,sil,?,(.),126.272,127.453
+165,CF36WOM_12,fil,?,:e,127.453,127.975
+166,CF36WOM_12,clause30-s1,sub,niente ,127.975,128.471
+167,CF36WOM_12,fil,f,:::e,128.471,128.668
+168,CF36WOM_12,clause30-s2,sub,{} no son stata bene con i le amicizie come oggi tutti i ragazzi,128.668,133.024
+169,CF36WOM_12,sil,?,(.),133.024,133.786
+170,CF36WOM_12,clause31-s1,sub,s-,133.786,134.066
+171,CF36WOM_12,len,s,:::n,134.066,134.474
+172,CF36WOM_12,clause31-s2,sub,niente,134.474,134.9
+173,CF36WOM_12,len,f,:::e,134.9,135.071
+174,CF36WOM_12,fil,?,:te,135.071,135.44
+175,CF36WOM_12,clause31-s3,sub,come si dice,135.44,136.256
+176,CF36WOM_12,len,f,:::e,136.256,136.502
+177,CF36WOM_12,sil,?,(.),136.502,137.288
+178,CF36WOM_12,fil,?,:e,137.288,137.527
+179,CF36WOM_12,clause31-s4,sub,in testa non mi frullava niente,137.527,139.007
+180,CF36WOM_12,clause32-s1,sub,perche' avev dei genitori abbastanza,139.007,140.684
+181,CF36WOM_12,len,f,:::a,140.684,140.838
+182,CF36WOM_12,sil,?,(.),140.838,140.992
+183,CF36WOM_12,clause32-s2,sub,abbastanza severi,140.992,142.08
+184,CF36WOM_12,sil,?,(.),142.08,142.392
+185,CF36WOM_12,clause33-s1,sub,pero' grazie a loro oggi,142.392,143.892
+186,CF36WOM_12,sil,?,(.),143.892,144.893
+187,CF36WOM_12,clause34-s1,sub,trasmetto questo ai miei figli,144.893,146.133
+188,CF36WOM_12,silV-e,?,(.)v,146.133,146.667
+189,CF36WOM_12,clause18_exp-s1,exp,"""e al mare ti piace andare in esta""",146.667,148.758
+190,CF36WOM_12,ove,?,[],148.758,149.192
+191,CF36WOM_12,clause35-s1,sub,si adesso poco,149.192,150.699
+192,CF36WOM_12,clause19_exp-s1,exp,"""e in estate?""",150.699,151.477
+193,CF36WOM_12,len_exp,?,:::e_exp,151.477,151.735
+194,CF36WOM_12,silV-s,?,(.)v,151.735,152.245
+195,CF36WOM_12,clause36-s1,sub,non mi piace,152.245,152.723
+196,CF36WOM_12,ove,?,[],152.723,153.148
+197,CF36WOM_12,clause20_exp-s1,exp,"""vaca""",153.148,153.381
+198,CF36WOM_12,len_exp,?,:::a_exp,153.381,153.619
+199,CF36WOM_12,clause20_exp-s2,exp,"""nze""",153.619,154.093
+200,CF36WOM_12,len_exp,?,:::e_exp,154.093,154.334
+201,CF36WOM_12,ove,?,[],154.334,156.015
+202,CF36WOM_12,fil,?,:e,156.015,156.47
+203,CF36WOM_12,clause37-s1,sub,tipo il lago Laceno,156.47,157.923
+204,CF36WOM_12,sil,?,(.),157.923,158.196
+205,CF36WOM_12,clause37-s2,sub,in montagna a stare freschi soprattutto la,158.196,160.658
+206,CF36WOM_12,clause38-s1,sub,perche' si sta tranqui/,160.658,161.682
+207,CF36WOM_12,len,m,:::i,161.682,161.836
+208,CF36WOM_12,clause38-s2,sub,lli,161.836,162.104
+209,CF36WOM_12,len,f,:::i,162.104,162.236
+210,CF36WOM_12,clause38-s3,sub,freschi,162.236,163.03
+211,CF36WOM_12,sil,?,(.),163.03,163.899
+212,CF36WOM_12,fil,?,:e,163.899,164.081
+213,CF36WOM_12,clause39-s1,sub,la mi piace di piu',164.081,164.867
+214,CF36WOM_12,silV-e,?,(.)v,164.867,165.246
+215,CF36WOM_12,clause21_exp-s1,exp,"""e stamattina che cosa hai fatto?""",165.246,167.061
+216,CF36WOM_12,clause40-s1,sub,la spesa,167.061,167.71
+217,CF36WOM_12,silV-e,?,(.)v,167.71,168.482
+218,CF36WOM_12,clause22_exp-s1,exp,"""che hai comprato?""",168.482,169.276
+219,CF36WOM_12,silV-s,?,(.)v,169.276,169.605
+220,CF36WOM_12,clause41-s1,sub,allora appunto come ti dicevo ho fatto a base di pesce,169.605,172.598
+221,CF36WOM_12,clause42-s1,sub,so andata a prendere,172.598,173.49
+222,CF36WOM_12,len,f,:::e,173.49,173.701
+223,CF36WOM_12,clause42-s2,sub,le cose che mi manca/,173.701,174.641
+224,CF36WOM_12,len,m,:::a,174.641,174.763
+225,CF36WOM_12,clause42-s3,sub,vano,174.763,175.137
+226,CF36WOM_12,sil,?,(.),175.137,175.512
+227,CF36WOM_12,fil,?,:e,175.512,175.882
+228,CF36WOM_12,clause42-s4,sub,poi detersi/,175.882,176.707
+229,CF36WOM_12,len,m,:::i,176.707,176.971
+230,CF36WOM_12,clause42-s5,sub,vi,176.971,177.168
+231,CF36WOM_12,len,f,:::i,177.168,177.317
+232,CF36WOM_12,clause45-s1,sub,di si cose e di solito che si prende il saba,177.317,179.679
+233,CF36WOM_12,ove,?,[],179.679,180.156
+234,CF36WOM_12,len_exp,?,:::m_exp,180.156,180.462
+235,CF36WOM_12,clause23_exp-s1,exp,"""ma""",180.462,180.695
+236,CF36WOM_12,len_exp,?,:::a_exp,180.695,180.883
+237,CF36WOM_12,clause23_exp-s2,exp,"""ti piace vedere la tv?""",180.883,182.275
+238,CF36WOM_12,len_exp,?,:::u_epx,182.275,182.42
+239,CF36WOM_12,clause24_exp-s1,exp,"""hai un progra""",182.42,182.936
+240,CF36WOM_12,ove,?,[],182.936,184.184
+241,CF36WOM_12,clause25_exp-s1,exp,"""ti piace vedere?""",184.184,185.22
+242,CF36WOM_12,fil,?,:e,185.22,185.598
+243,CF36WOM_12,clause46-s1,sub,soprattutto appunto il fu- i film romantici ,185.598,187.868
+244,CF36WOM_12,sil,?,(.),187.868,187.982
+245,CF36WOM_12,clause47-s1,sub,se ci sono,187.982,188.895
+246,CF36WOM_12,sil,?,(.),188.895,189.497
+247,CF36WOM_12,ove,?,[],189.497,189.951
+248,CF36WOM_12,clause26_exp-s1,exp,"""ilm che ti piace particolarmente?""",189.951,191.981
+249,CF36WOM_12,clause48-s1,sub,parti- ma a me mi piacciono tipo,191.981,193.651
+250,CF36WOM_12,len,f,:::o,193.651,193.835
+251,CF36WOM_12,clause48-s2,sub,Poveri ma Belli,193.835,194.881
+252,CF36WOM_12,lau,?,[l],194.881,195.338
+253,CF36WOM_12,ove,?,[],195.338,196.144
+254,CF36WOM_12,clause27_exp-s1,exp,"""ccontare un po'?""",196.144,197.073
+255,CF36WOM_12,clause49-s1,sub,sono,197.073,197.454
+256,CF36WOM_12,len,f,:::o,197.454,197.594
+257,CF36WOM_12,clause49-s2,sub,ecco poveri ma belli sereni ,197.594,199.829
+258,CF36WOM_12,clause50-s1,sub,sono felici,199.829,200.844
+259,CF36WOM_12,sil,?,(.),200.844,201.046
+260,CF36WOM_12,clause51-s1,sub,non c'a avevano nulla  di soldi,201.046,202.694
+261,CF36WOM_12,clause52-s1,sub,pero' erano belli,202.694,203.616
+262,CF36WOM_12,sil,?,(.),203.616,204.266
+263,CF36WOM_12,clause53-s1,sub,cioe',204.266,204.49
+264,CF36WOM_12,len,f,:::e,204.49,204.63
+265,CF36WOM_12,clause53-s2,sub,vivevano nel,204.63,205.381
+266,CF36WOM_12,sil,?,(.),205.381,205.57
+267,CF36WOM_12,clause53-s3,sub,poco nel piccolo,205.57,206.646
+268,CF36WOM_12,clause54-s1,sub,stavano bene non come oggi,206.646,208.296
+269,CF36WOM_12,sil,?,(.),208.296,208.755
+270,CF36WOM_12,clause55-s1,sub,p- compr- pecche' la rovina dei ragazzi di oggi e' proprio a televisione,208.755,212.741
+271,CF36WOM_12,clause56-s1,sub,in che senso a tecnologia troppe cose avanti,212.741,215.375
+272,CF36WOM_12,sil,?,(.),215.375,215.661
+273,CF36WOM_12,clause57-s1,sub,e fa male,215.661,216.523
+274,CF36WOM_12,sil,?,(.),216.523,216.786
+275,CF36WOM_12,clause58-s1,sub,invece prima si divertiva anche per niente,216.786,218.661
+276,CF36WOM_12,sil,?,(.),218.661,219.072
+277,CF36WOM_12,clause59-s1,sub,allora a mie tempi,219.072,220.235
+278,CF36WOM_12,sil,?,(.),220.235,221.068
+279,CF36WOM_12,clause59-s2,sub,giovaca ca campana,221.068,222.302
+280,CF36WOM_12,len,f,:::a,222.302,222.495
+281,CF36WOM_12,clause59-s3,sub,col gessetto a terr,222.495,223.57
+282,CF36WOM_12,clause60-s1,sub,ci d- per niente basta- eramo tranquilli felici,223.57,226.201
+283,CF36WOM_12,clause61-s1,sub,invece adesso no,226.201,227.151
+284,CF36WOM_12,sil,?,(.),227.151,227.401
+285,CF36WOM_12,clause62-s1,sub,vedo che e' cambiato tutto,227.401,228.718
+286,CF36WOM_12,silV-e,?,(.)v,228.718,230.001
+287,CF36WOM_12,len,s,:::e,230.001,230.311
+288,CF36WOM_12,clause28_exp-s1,exp,"""e il salito che cosa fai di solito?""",230.311,232.527
+289,CF36WOM_12,clause63-s1,sub,di solito ,232.527,233.317
+290,CF36WOM_12,sil,?,(.),233.317,233.401
+291,CF36WOM_12,clause63-s2,sub,quasi sempre andiamo fuori a cena con gli amici mio marito sempre,233.401,237.063
+292,CF36WOM_12,sil,?,(.),237.063,237.472
+293,CF36WOM_12,clause63-s3,sub,si si,237.472,237.866
+294,CF36WOM_12,ove,?,[],237.866,238.163
+295,CF36WOM_12,len_exp,?,:::i_exp,238.163,238.356
+296,CF36WOM_12,clause29_exp-s1,exp,"""non vedi la tv?""",238.356,239.458
+297,CF36WOM_12,clause30_exp-s1,exp,"""ad esempio c'e' posta per te l'hai mai vis""",239.458,241.798
+298,CF36WOM_12,ove,?,[],241.798,241.965
+299,CF36WOM_12,clause64-s1,sub,capitato certo che stav,241.965,243.233
+300,CF36WOM_12,ove,?,[],243.233,243.626
+301,CF36WOM_12,clause64-s2,sub,casa,243.626,243.996
+302,CF36WOM_12,len,s,:::s,243.996,244.128
+303,CF36WOM_12,clause67-s3,sub,si si pure l'ho visto pero' di raro,244.128,246.244
+304,CF36WOM_12,clause68-s1,sub,appunto perche' il sabato usciamo con mio marito,246.244,248.11
+305,CF36WOM_12,clause69-s1,sub,pecche',248.11,248.364
+306,CF36WOM_12,len,f,:::e,248.364,248.504
+307,CF36WOM_12,clause69-s2,sub,capita che stai libera,248.504,250.012
+308,CF36WOM_12,clause70-s1,sub,e,250.012,250.17
+309,CF36WOM_12,len,f,:::e,250.17,250.449
+310,CF36WOM_12,sil,?,(.),250.449,250.741
+311,CF36WOM_12,clause70-s2,sub,ne approfittiamo almeno o sabato,250.741,252.085
+312,CF36WOM_12,ove,?,[],252.085,252.248
+313,CF36WOM_12,clause31_exp-s1,exp,"""e tuo figlio ha compiuto gia' 18 a/""",252.248,253.978
+314,CF36WOM_12,len_exp,?,:::a_exp,253.978,254.185
+315,CF36WOM_12,clause31_exp-s2,exp,"""n""",254.185,254.307
+316,CF36WOM_12,clause71-s1,sub,la da ad agosto,254.307,255.375
+317,CF36WOM_12,clause32_exp-s1,exp,"""avete fatto una"" ",255.375,256.098
+318,CF36WOM_12,len,f,:::a,256.098,256.199
+319,CF36WOM_12,clause32_exp-s2,exp,"""festa?""",256.199,256.694
+320,CF36WOM_12,clause72-s1,sub,ad agosto faremo la festa,256.694,258.092
+321,CF36WOM_12,clause33_exp-s1,exp,"""ah ad agosto compie dicio""",258.092,259.335
+322,CF36WOM_12,ove,?,[],259.335,260.654
+323,CF36WOM_12,clause34_exp-s1,exp,"""che cosa vorreste fare?""",260.654,261.954
+324,CF36WOM_12,clause73-s1,sub,e no lui,261.954,262.541
+325,CF36WOM_12,len,f,:::i,262.541,263.232
+326,CF36WOM_12,len,s,:::m,263.232,263.427
+327,CF36WOM_12,clause73-s2,sub,mi ha proposto di fare una festa,263.427,264.942
+328,CF36WOM_12,len,f,:::a,264.942,265.368
+329,CF36WOM_12,clause73-s3,sub,sulla spiaggia con gli amici,265.368,266.777
+330,CF36WOM_12,silV-e,?,(.)v,266.777,268.02
+331,CF36WOM_12,clause35_exp-s1,exp,"""va bene""",268.02,268.822
+332,CF36WOM_12,noise,?,{noise},268.822,271.669
