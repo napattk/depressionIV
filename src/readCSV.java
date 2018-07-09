@@ -5,10 +5,16 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+
 public class ReadCSV {
 	
 	private static List<List<String>> lines;
-	
+	final static JFileChooser fc = new JFileChooser();
+	public static int REPLACE_DATA = 1;
+	public static int APPEND_DATA = 2;
+
 
 	public static void main(String[] args){
         readData("dataSet1.csv");
@@ -51,4 +57,61 @@ public class ReadCSV {
 		
 	}
 	
+	public static JFileChooser getFC() {
+		return fc;
+	}
+	
+	public static void openFile(MainFrame frame, int openFileMode) {
+		File file = null;
+		int returnVal = fc.showOpenDialog(frame);
+		
+		if (returnVal == JFileChooser.APPROVE_OPTION) {
+			if(openFileMode == REPLACE_DATA) { //mode replace
+				file = fc.getSelectedFile();
+				
+				String filename = file.getName();
+		        System.out.println("Opening: " + file.getAbsolutePath() + "." );
+		        
+		        String extension =  filename.substring(filename.indexOf("."));
+		        System.out.println(extension);
+		        
+		        if(!extension.equals(".csv")) {
+		        	System.out.println("Unsupported file type selected.");
+		        }
+		        else {
+			        String filePath = file.getAbsolutePath();
+			        List<List<String>> newFileData = ReadCSV.readData(filePath);
+			        
+				        MainFrame.setMainFrameData(newFileData);
+				        BarPanel.setBarData(newFileData);
+				        frame.repaint();
+			    }
+			} else if (openFileMode == APPEND_DATA) { //mode append
+	        	File[] files = fc.getSelectedFiles();
+	        	for(int i = 0; i < files.length; i++) {
+	        		
+		        	String filename = files[i].getName();
+		            System.out.println("Opening: " + files[i].getAbsolutePath() + "." );
+		    	
+		            String extension =  filename.substring(filename.indexOf("."));
+		            System.out.println(extension);
+		        	
+		            
+		            if(!extension.equals(".csv")) {
+		            	System.out.println("Unsupported file type selected.");
+		            }
+		            else {
+		            	List<List<String>> data = MainFrame.getMainFrameData();
+		            	String filePath = files[i].getAbsolutePath();
+			        	data.addAll(ReadCSV.readData(filePath));
+			        	MainFrame.setMainFrameData(data);
+			        	frame.repaint();
+		            }
+	            }
+	        }
+
+		} else {
+			  System.out.println("Open command cancelled by user." );
+		}
+	}
 }

@@ -44,15 +44,15 @@ public class BarPanel extends JPanel implements MouseMotionListener{
 	public BarPanel(List<List<String>> newData) {
 		this.addMouseMotionListener(this);
 		BarPanel contentBar = this;
-		contentBar.setBackground(GUITest.BGColor);
-		TitledBorder titledBorder = BorderFactory.createTitledBorder(BorderFactory.createLineBorder(GUITest.BGColor),"Content Bar");
-		titledBorder.setTitleColor(GUITest.textColor);
-		titledBorder.setTitleFont(GUITest.robotoFont);
+		contentBar.setBackground(Aesthetics.BGColor);
+		TitledBorder titledBorder = BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Aesthetics.BGColor),"Content Bar");
+		titledBorder.setTitleColor(Aesthetics.textColor);
+		titledBorder.setTitleFont(Aesthetics.robotoFont);
 		contentBar.setBorder(titledBorder);
 		data = newData;
 		tier2Color.add("clause");
-		WIN_WIDTH = GUITest.WIN_WIDTH;
-		WIN_HEIGHT = GUITest.WIN_HEIGHT;
+		WIN_WIDTH = MainFrame.WIN_WIDTH;
+		WIN_HEIGHT = MainFrame.WIN_HEIGHT;
 		
 	}
 	
@@ -89,7 +89,7 @@ public class BarPanel extends JPanel implements MouseMotionListener{
 	    	  Rectangle2D r2d = new Rectangle2D.Double(rectX, rectY, rectWidth, rectHeight);
 	    	  if(r2d.contains(mx,my)) {
 	    		  r2d.setFrame(rectX, rectY-10, rectWidth, 100);
-	    		  GUITest.setDescTable(line, subject, tier1, tier2, tier3, tMin, tMax);
+	    		  MainFrame.setDescTable(line, subject, tier1, tier2, tier3, Double.toString(tMin), Double.toString(tMax));
 	    	  }
 	    	  g2d.setColor(color[findTier2Color(tier2)]);
 	    	  g2d.fill(r2d);
