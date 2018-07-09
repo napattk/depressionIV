@@ -43,7 +43,7 @@ public class Filter {
 		for(int i = 0; i < data.size();i++ ) {
 			String tier1 = data.get(i).get(4);
 	    		//List all with query string
-				if(tier1.matches("(?i)("+text+").*")) {
+				if(tier1.matches("(.*?)("+text+").*")) {
 					String tMin = data.get(i).get(5);
 			    	String tMax =data.get(i).get(6);
 			    	tier1List.add(Arrays.asList(tier1,tMin,tMax));

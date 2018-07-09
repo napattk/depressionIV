@@ -45,7 +45,7 @@ public class MainFrame extends JPanel implements ActionListener {
 	public static int WIN_WIDTH = 1900;
 	public static int WIN_HEIGHT = 420;
 	public static int WIN_WIDTH2 = 1200;
-	public static int WIN_HEIGHT2 = 240;
+	public static int WIN_HEIGHT2 = 275;
 	private static List<List<String>> data = null;
 	private static List<String> tier2Color = new ArrayList<>();
 	private static int mode = 0;
@@ -60,6 +60,7 @@ public class MainFrame extends JPanel implements ActionListener {
 		private static JTextArea tier2TextArea;
 		private static JTextField tier1FilterText;
 		private static JTable tier1Table;
+		private static BarPanel barPanel;
 	//Table Data
 		Object[][] tableData = {
 			    {"Line", ""},
@@ -74,24 +75,40 @@ public class MainFrame extends JPanel implements ActionListener {
 		static String[] tier1ColumnNames = {"Full String", "tmin","tmax"};
 		static List<List<String>> tier1TableData = new ArrayList<>();
 
-		
-	
-	
 	public MainFrame(List<List<String>> newData, int mode) {
 		frame = new JFrame("Depression Conditions");
 		if(mode == 1) frame.getContentPane().setLayout(new GridLayout(2,1));
 		else if(mode==2) frame.getContentPane().setLayout(new BorderLayout());
 		
 		//Create menu bar
-		if(mode == 1) {
+		
 			JMenuBar menuBar = new JMenuBar();
 			JMenu file = new JMenu("File");
 			
+		if(mode == ModeSelect.SINGLE_MODE) {
 			JMenuItem openMenuItem = new JMenuItem("Open");
 			openMenuItem.setActionCommand("Open Action");
 			openMenuItem.addActionListener(this);
-			file.add(openMenuItem);
+			file.add(openMenuItem);	
+		}
+		else if(mode == ModeSelect.MULTI_MODE) {
+			JMenuItem addFilesItem = new JMenuItem("Add Files");
+			addFilesItem.setActionCommand("Mode 2 Add Files");
+			addFilesItem.addActionListener(this);
+			file.add(addFilesItem);
 			
+			JMenuItem closeFilesItem = new JMenuItem("Close All Files");
+			closeFilesItem.setActionCommand("Mode 2 Close Files");
+			closeFilesItem.addActionListener(this);
+			file.add(closeFilesItem);
+
+		}
+		
+			JMenuItem modeSelectItem = new JMenuItem("Mode Select");
+			modeSelectItem.setActionCommand("Switch Mode");
+			modeSelectItem.addActionListener(this);
+			file.add(modeSelectItem);
+		
 			JMenuItem exitMenuItem = new JMenuItem("Exit");
 			exitMenuItem.setActionCommand("Exit Action");
 			exitMenuItem.addActionListener(this);
@@ -99,13 +116,13 @@ public class MainFrame extends JPanel implements ActionListener {
 			
 			menuBar.add(file);
 			frame.setJMenuBar(menuBar);
-		}
+		
 			
 		
 		//Create content bar 
 			data = newData;
 			if(mode == 1) {
-				BarPanel barPanel = new BarPanel(data);
+				barPanel = new BarPanel(data);
 				frame.getContentPane().add(barPanel);
 			}
 			
@@ -243,6 +260,7 @@ public class MainFrame extends JPanel implements ActionListener {
 	    if (actionCommand.equals("Open Action")) {
 	    	ReadCSV.openFile(this, ReadCSV.REPLACE_DATA);
 	    	clearFields();
+	    	barPanel.repaint();
 	    } else if (actionCommand.equals("Exit Action")){
 	    	System.exit(0);
 	    } else if (actionCommand.equals("Tier 2 Apply Filter")){
@@ -256,6 +274,9 @@ public class MainFrame extends JPanel implements ActionListener {
 	    }else if (actionCommand.equals("Mode 2 Close Files")){
 	    	data.clear();
 	    	clearFields();
+	    } else if (actionCommand.equals("Switch Mode")){
+	    	frame.dispose();
+	    	ModeSelect.getModeSelectFrame().setVisible(true);
 	    }else {
 	       System.out.println("Action not supported");
 	    }

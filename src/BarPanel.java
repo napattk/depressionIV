@@ -148,6 +148,7 @@ public class BarPanel extends JPanel implements MouseMotionListener{
 	
 	public static void setBarData(List<List<String>> newData) {
 		data = newData;
+		
 	}
 	
 }

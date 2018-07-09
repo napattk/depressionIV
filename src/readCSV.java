@@ -85,6 +85,7 @@ public class ReadCSV {
 				        MainFrame.setMainFrameData(newFileData);
 				        BarPanel.setBarData(newFileData);
 				        frame.repaint();
+				       
 			    }
 			} else if (openFileMode == APPEND_DATA) { //mode append
 	        	File[] files = fc.getSelectedFiles();

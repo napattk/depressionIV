@@ -14,8 +14,8 @@ public class ModeSelect extends JPanel implements ActionListener{
 	
 	static JFrame frame = new JFrame("Mode Selection");
 	JFileChooser fc = new JFileChooser();
-	private static int SINGLE_MODE = 1;
-	private static int MULTI_MODE = 2;
+	public static int SINGLE_MODE = 1;
+	public static int MULTI_MODE = 2;
 
 	public ModeSelect() {
 		frame.getContentPane().setLayout(new GridLayout(3,1));
@@ -53,19 +53,25 @@ public class ModeSelect extends JPanel implements ActionListener{
 		String actionCommand = e.getActionCommand();
 		
 	    if (actionCommand.equals("Single Mode")) {
-	    	frame.dispose();
+	    	frame.setVisible(false);
 	    	List<List<String>> dataSet = getFileData(SINGLE_MODE);
 	    	if(dataSet == null) {
+	    		frame.setVisible(true);
 	    		System.out.print("Error: Data set is null, or user canceled operation.");
 	    	}else {
 	    		MainFrame mainPanel = new MainFrame(dataSet,1);
 	    	}
 	    	
 	    } else if (actionCommand.equals("Multi Mode")){
-	    	frame.dispose();
+	    	frame.setVisible(false);
 	    	fc.setMultiSelectionEnabled(true);
 	    	List<List<String>> dataSet = getFileData(MULTI_MODE);
-	        MainFrame mainPanel = new MainFrame(dataSet,2);
+	    	if(dataSet == null) {
+	    		frame.setVisible(true);
+	    		System.out.print("Error: Data set is null, or user canceled operation.");
+	    	}else {
+	    		MainFrame mainPanel = new MainFrame(dataSet,2);
+	    	} 
 	    } else if (actionCommand.equals("Exit")){
 	    	System.exit(0);
 	    }else {
@@ -130,6 +136,10 @@ public class ModeSelect extends JPanel implements ActionListener{
         	  return null;
         }
 		return null;
+	}
+	
+	public static JFrame getModeSelectFrame() {
+		return frame;
 	}
 	
 
