@@ -36,7 +36,6 @@ public class ModeSelect extends JPanel implements ActionListener{
 		exitButton.setActionCommand("Exit");
 		frame.add(exitButton);
 		
-		
 		 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 frame.pack();
 		 frame.setSize(300, 300);

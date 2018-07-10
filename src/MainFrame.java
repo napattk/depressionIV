@@ -60,6 +60,9 @@ public class MainFrame extends JPanel implements ActionListener {
 		private static JTextArea tier2TextArea;
 		private static JTextField tier1FilterText;
 		private static JTable tier1Table;
+		private static JTable tier2Table;
+		private static JTable tier2PercenTable;
+		
 		private static BarPanel barPanel;
 	//Table Data
 		Object[][] tableData = {
@@ -72,8 +75,12 @@ public class MainFrame extends JPanel implements ActionListener {
 			    {"T-Max", ""}
 			};
 		String[] columnNames = {"Data Type", "Value"};
-		static String[] tier1ColumnNames = {"Full String", "tmin","tmax"};
+		static String[] tierColumnNames = {"Full String", "tmin","tmax"};
 		static List<List<String>> tier1TableData = new ArrayList<>();
+		static List<List<String>> tier2TableData = new ArrayList<>();
+		
+		static String[] tier2PercenColumnNames = {"Tier 2 Type", "Percentage"};
+		static List<List<String>> tier2PercenTableData = new ArrayList<>();
 
 	public MainFrame(List<List<String>> newData, int mode) {
 		frame = new JFrame("Depression Conditions");
@@ -177,8 +184,9 @@ public class MainFrame extends JPanel implements ActionListener {
 			descTable.setBorder(compound);
 			}
 		
-	
-		//Tier2 Filter
+			
+		//Old Tier2 Filter
+			/*
 			JPanel tier2FilterPanel = Aesthetics.createBorderedPanel("Tier2 Filter");
 			tier2FilterPanel.setLayout((new BorderLayout()));
 			subPanel1.add(tier2FilterPanel);
@@ -202,7 +210,11 @@ public class MainFrame extends JPanel implements ActionListener {
 			tier2TextArea.setForeground(Aesthetics.textColor);
 			tier2TextArea.setFont(Aesthetics.robotoFont);
 			tier2TextArea.setBackground(Color.decode("#141d26"));
-		
+			*/
+			
+			
+			
+			
 		//Tier1 Filter
 			JPanel tier1FilterPanel = Aesthetics.createBorderedPanel("Tier1 Filter");
 			tier1FilterPanel.setLayout((new BorderLayout()));
@@ -222,18 +234,56 @@ public class MainFrame extends JPanel implements ActionListener {
 			tier1Button.setActionCommand("Tier 1 Apply Filter");
 			tier1Input.add(tier1Button);
 
-			tier1Table = new JTable(arrayListToObject(tier1TableData), tier1ColumnNames);
+			tier1Table = new JTable(arrayListToObject(tier1TableData,3), tierColumnNames);
 			JScrollPane tier1ScrollPane = new JScrollPane(tier1Table);
 			tier1ScrollPane.setPreferredSize((new Dimension(100, 110)));
 			tier1FilterPanel.add(tier1ScrollPane,BorderLayout.SOUTH);
+			
+		//Tier2 Filter
+			JPanel tier2FilterPanel = Aesthetics.createBorderedPanel("Tier2 Filter");
+			tier2FilterPanel.setLayout((new BorderLayout()));
+			subPanel1.add(tier2FilterPanel);
+			
+			JPanel tier2Input = new JPanel();
+			tier2Input.setLayout((new FlowLayout()));
+			tier2Input.setBackground(Aesthetics.BGColor);
+			tier2FilterPanel.add(tier2Input,BorderLayout.NORTH);
+			
+			tier2FilterText = new JTextField(20);
+			tier2Input.add(tier2FilterText);
+			tier2FilterText.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+		
+			JButton tier2Button = Aesthetics.createSimpleButton("Apply Tier 2");
+			tier2Button.addActionListener(this);
+			tier2Button.setActionCommand("Tier 2 Apply Filter");
+			tier2Input.add(tier2Button);
 
+			tier2Table = new JTable(arrayListToObject(tier2TableData,3), tierColumnNames);
+			JScrollPane tier2ScrollPane2 = new JScrollPane(tier2Table);
+			tier2ScrollPane2.setPreferredSize((new Dimension(100, 110)));
+			tier2FilterPanel.add(tier2ScrollPane2,BorderLayout.SOUTH);
+		
+		//Tier2 Percentage
+			JPanel tier2PercenPanel = Aesthetics.createBorderedPanel("Tier2 Percentage Breakdown");
+			tier2PercenPanel.setLayout((new BorderLayout()));
+			subPanel1.add(tier2PercenPanel);
+			
+			tier2PercenTable = new JTable(arrayListToObject(tier2PercenTableData,2), tier2PercenColumnNames);
+			JScrollPane tier2PercenScrollPane2 = new JScrollPane(tier2PercenTable);
+			tier2PercenScrollPane2.setPreferredSize((new Dimension(100, 140)));
+			tier2PercenPanel.add(tier2PercenScrollPane2,BorderLayout.SOUTH);
+			
+			Filter.populateTier2Percen(data);
+			
 		
 		//Padding
+			/*
 			if(mode == 1) {
 				JPanel padding = new JPanel();
 				padding.setBackground(Aesthetics.BGColor);
 				subPanel1.add(padding);
 			}
+			*/
 		
 	
 	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -264,9 +314,9 @@ public class MainFrame extends JPanel implements ActionListener {
 	    } else if (actionCommand.equals("Exit Action")){
 	    	System.exit(0);
 	    } else if (actionCommand.equals("Tier 2 Apply Filter")){
-	    	Filter.applyFilterTier2(tier2FilterText.getText(), data);
+	    	Filter.applyTierFilter(tier2FilterText.getText(), data, 2);
 	    } else if (actionCommand.equals("Tier 1 Apply Filter")){
-	    	Filter.applyFilterTier1(tier1FilterText.getText(), data);
+	    	Filter.applyTierFilter(tier1FilterText.getText(), data, 1);
 	    }else if (actionCommand.equals("Mode 2 Add Files")){
 	    	ReadCSV.getFC().setMultiSelectionEnabled(true);
 	    	ReadCSV.openFile(this, ReadCSV.APPEND_DATA);
@@ -294,25 +344,46 @@ public class MainFrame extends JPanel implements ActionListener {
 		tier2TextArea.setText(text);
 	}
 	
-	public static List<List<String>> getTier1List() {
+	public static List<List<String>> getTier1TableData() {
 		return tier1TableData;
 	}
 	
-	
 	public static void updateTier1Table() {
-		tier1Table.setModel(new DefaultTableModel(arrayListToObject(tier1TableData),tier1ColumnNames));
+		tier1Table.setModel(new DefaultTableModel(arrayListToObject(tier1TableData,3),tierColumnNames));
 		tier1TableData.clear();
 	}
 	
-	public static Object[][] arrayListToObject(List<List<String>> tableData) {
+	public static List<List<String>> getTier2TableData() {
+		return tier2TableData;
+	}
+	
+	public static void updateTier2Table() {
+		tier2Table.setModel(new DefaultTableModel(arrayListToObject(tier2TableData,3),tierColumnNames));
+		tier2TableData.clear();
+	}
+	
+	public static List<List<String>> getTier2PercenTableData() {
+		return tier2PercenTableData;
+	}
+	
+	public static void updateTier2PercenTable() {
+		tier2PercenTable.setModel(new DefaultTableModel(arrayListToObject(tier2PercenTableData,2),tier2PercenColumnNames));
+		tier2PercenTableData.clear();
+	}
+	
+	
+	public static Object[][] arrayListToObject(List<List<String>> tableData, int cols) {
 		Object[][] tableDataObject = new Object[tableData.size()][];
 		
 		for (int i = 0; i < tableData.size(); i++)
 		{
-			tableDataObject[i] = new Object[3];
-			tableDataObject[i][0] = tableData.get(i).get(0);
-			tableDataObject[i][1] = tableData.get(i).get(1);
-			tableDataObject[i][2] = tableData.get(i).get(2);
+			tableDataObject[i] = new Object[cols];
+			for (int j = 0; j < cols; j++) {
+				System.out.println("i: "+ i + ", j: "+ j);
+				tableDataObject[i][j] = tableData.get(i).get(j);
+				//tableDataObject[i][1] = tableData.get(i).get(1);
+				//tableDataObject[i][2] = tableData.get(i).get(2);
+			}
 		}
 		return tableDataObject;
 	}

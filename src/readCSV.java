@@ -29,7 +29,9 @@ public class ReadCSV {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-        
+		
+		scanner.nextLine(); //skip column names
+		
         while(scanner.hasNext()){
         	String line =  scanner.nextLine();
 

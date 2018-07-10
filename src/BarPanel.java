@@ -26,7 +26,7 @@ public class BarPanel extends JPanel implements MouseMotionListener{
 	private static int WIN_WIDTH;
 	private static int WIN_HEIGHT;
 	private static List<List<String>> data = null;
-	private static List<String> tier2Color = new ArrayList<>();
+	private static List<String> tier2List = new ArrayList<>();
 	private boolean mouseMoved = false;
 	private int mx = 0;
 	private int my = 0;
@@ -50,7 +50,7 @@ public class BarPanel extends JPanel implements MouseMotionListener{
 		titledBorder.setTitleFont(Aesthetics.robotoFont);
 		contentBar.setBorder(titledBorder);
 		data = newData;
-		tier2Color.add("clause");
+		tier2List.add("clause");
 		WIN_WIDTH = MainFrame.WIN_WIDTH;
 		WIN_HEIGHT = MainFrame.WIN_HEIGHT;
 		
@@ -69,7 +69,7 @@ public class BarPanel extends JPanel implements MouseMotionListener{
     	  double totalTime = Double.parseDouble(data.get(data.size()-1).get(6));
     	  int MAX_BAR_WIDTH = WIN_WIDTH - 60;
     	  
-	      for(int i = 1; i<data.size(); i++) {
+	      for(int i = 0; i<data.size(); i++) {
 	    	  rectX = rectX + prevRectWidth;
 	    	  curRectX = 10;
 	    	  
@@ -116,19 +116,20 @@ public class BarPanel extends JPanel implements MouseMotionListener{
 	
 	private static int findTier2Color(String tier2) {
 		int i = 0;
-		for (i = 0; i <tier2Color.size(); i++){
-            if(tier2.matches(tier2Color.get(i))){
+		for (i = 0; i <tier2List.size(); i++){
+            if(tier2.matches(tier2List.get(i))){
                 return i;
             }else if(tier2.matches("(?i)(clause).*")) {
             	return 0;
             }
         }
 		
-		tier2Color.add(tier2);
-		System.out.println(tier2Color.get(i) + " added");
-		System.out.println(tier2Color.size());
+		tier2List.add(tier2);
+		System.out.println(tier2List.get(i) + " added");
+		System.out.println(tier2List.size());
 		return i+1;
 	}
+	
 
 	@Override
 	public void mouseDragged(MouseEvent arg0) {
