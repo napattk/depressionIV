@@ -2,26 +2,13 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.GraphicsEnvironment;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionListener;
-import java.awt.geom.Rectangle2D;
-import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
 
-import javax.swing.BorderFactory;
 import javax.swing.JButton;
-import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -31,20 +18,18 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.SwingUtilities;
 import javax.swing.border.Border;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
-import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
+
 
 public class MainFrame extends JPanel implements ActionListener {
 	
 	public static int WIN_WIDTH = 1900;
 	public static int WIN_HEIGHT = 420;
-	public static int WIN_WIDTH2 = 1200;
+	public static int WIN_WIDTH2 = 1900;
 	public static int WIN_HEIGHT2 = 275;
 	private static List<List<String>> data = null;
 	private static List<String> tier2Color = new ArrayList<>();
@@ -62,54 +47,63 @@ public class MainFrame extends JPanel implements ActionListener {
 		private static JTable tier1Table;
 		private static JTable tier2Table;
 		private static JTable tier2PercenTable;
+		private static JTable filesOpenedTable;
 		
 		private static BarPanel barPanel;
 	//Table Data
 		Object[][] tableData = {
 			    {"Line", ""},
 			    {"Subject", ""},
-			    {"Tier1", ""},
-			    {"Tier2", ""},
-			    {"Tier3", ""},
-			    {"T-min", ""},
-			    {"T-Max", ""}
+			    {"Transcription (Tier1)", ""},
+			    {"Transcription Type (Tier2)", ""},
+			    {"Speaker (Tier3)", ""},
+			    {"Start Time (T-min)", ""},
+			    {"End Time (T-Max)", ""}
 			};
 		String[] columnNames = {"Data Type", "Value"};
-		static String[] tierColumnNames = {"Full String", "tmin","tmax"};
+		static String[] tierColumnNames = {"Full String", "Start Time","End Time"};
 		static List<List<String>> tier1TableData = new ArrayList<>();
 		static List<List<String>> tier2TableData = new ArrayList<>();
 		
-		static String[] tier2PercenColumnNames = {"Tier 2 Type", "Percentage"};
+		static String[] tier2PercenColumnNames = {"Transcription Type", "Percentage"};
 		static List<List<String>> tier2PercenTableData = new ArrayList<>();
+		
+		static String[] filesOpenedColumnNames = {"Files"};
+		static List<List<String>>  filesOpenedTableData = new ArrayList<>();
 
 	public MainFrame(List<List<String>> newData, int mode) {
+		
 		frame = new JFrame("Depression Conditions");
-		if(mode == 1) frame.getContentPane().setLayout(new GridLayout(2,1));
-		else if(mode==2) frame.getContentPane().setLayout(new BorderLayout());
+		JPanel contentPane = new JPanel();
+		JScrollPane mainScrollPane = new JScrollPane(contentPane, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+		frame.getContentPane().add(mainScrollPane);
+		if(mode == 1) contentPane.setLayout(new GridLayout(2,1));
+		else if(mode==2) contentPane.setLayout(new BorderLayout());
 		
-		//Create menu bar
-		
+		//Content of window changes depending on mode selected
+		//Create menu bar	
 			JMenuBar menuBar = new JMenuBar();
 			JMenu file = new JMenu("File");
 			
-		if(mode == ModeSelect.SINGLE_MODE) {
-			JMenuItem openMenuItem = new JMenuItem("Open");
-			openMenuItem.setActionCommand("Open Action");
-			openMenuItem.addActionListener(this);
-			file.add(openMenuItem);	
-		}
-		else if(mode == ModeSelect.MULTI_MODE) {
-			JMenuItem addFilesItem = new JMenuItem("Add Files");
-			addFilesItem.setActionCommand("Mode 2 Add Files");
-			addFilesItem.addActionListener(this);
-			file.add(addFilesItem);
 			
-			JMenuItem closeFilesItem = new JMenuItem("Close All Files");
-			closeFilesItem.setActionCommand("Mode 2 Close Files");
-			closeFilesItem.addActionListener(this);
-			file.add(closeFilesItem);
-
-		}
+			if(mode == ModeSelect.SINGLE_MODE) {
+				JMenuItem openMenuItem = new JMenuItem("Open");
+				openMenuItem.setActionCommand("Open Action");
+				openMenuItem.addActionListener(this);
+				file.add(openMenuItem);	
+			}
+			else if(mode == ModeSelect.MULTI_MODE) {
+				JMenuItem addFilesItem = new JMenuItem("Add Files");
+				addFilesItem.setActionCommand("Mode 2 Add Files");
+				addFilesItem.addActionListener(this);
+				file.add(addFilesItem);
+				
+				JMenuItem closeFilesItem = new JMenuItem("Close All Files");
+				closeFilesItem.setActionCommand("Mode 2 Close Files");
+				closeFilesItem.addActionListener(this);
+				file.add(closeFilesItem);
+	
+			}
 		
 			JMenuItem modeSelectItem = new JMenuItem("Mode Select");
 			modeSelectItem.setActionCommand("Switch Mode");
@@ -130,7 +124,7 @@ public class MainFrame extends JPanel implements ActionListener {
 			data = newData;
 			if(mode == 1) {
 				barPanel = new BarPanel(data);
-				frame.getContentPane().add(barPanel);
+				contentPane.add(barPanel);
 			}
 			
 		//File Menu Buttons
@@ -160,20 +154,21 @@ public class MainFrame extends JPanel implements ActionListener {
 		//Main Panel
 			JPanel mainPanel = new JPanel();
 			mainPanel.setBackground(Aesthetics.BGColor);
-			frame.getContentPane().add(mainPanel);
+			contentPane.add(mainPanel);
 			JPanel subPanel1 = new JPanel();
 			subPanel1.setBackground(Aesthetics.BGColor);
 			mainPanel.add(subPanel1);
 			subPanel1.setLayout(new GridLayout(1,6,50,0));
+		
 		
 		//Details Table
 			if(mode == 1) {
 			JPanel descPanel = Aesthetics.createBorderedPanel("Details");
 			descTable = new JTable(tableData, columnNames);
 			descTable.setFont(Aesthetics.robotoFont);
-			JScrollPane scrollPane = new JScrollPane(descTable);
-			scrollPane.setPreferredSize((new Dimension(300, 135)));
-			descPanel.add(scrollPane);
+			JScrollPane detailsScrollPane = new JScrollPane(descTable);
+			detailsScrollPane.setPreferredSize((new Dimension(300, 135)));
+			descPanel.add(detailsScrollPane);
 			subPanel1.add(descPanel);
 			
 			Border line = new LineBorder(Color.BLACK);
@@ -183,40 +178,21 @@ public class MainFrame extends JPanel implements ActionListener {
 			descTable.setBackground(Color.WHITE);
 			descTable.setBorder(compound);
 			}
-		
 			
-		//Old Tier2 Filter
-			/*
-			JPanel tier2FilterPanel = Aesthetics.createBorderedPanel("Tier2 Filter");
-			tier2FilterPanel.setLayout((new BorderLayout()));
-			subPanel1.add(tier2FilterPanel);
+		//Files Opened
+			if(mode == 2) {
+			JPanel filesOpenedPanel = Aesthetics.createBorderedPanel("Files Opened");
+			filesOpenedPanel.setLayout((new BorderLayout()));
+			subPanel1.add(filesOpenedPanel);
 			
-			JPanel tier2Input = new JPanel();
-			tier2Input.setLayout((new FlowLayout()));
-			tier2Input.setBackground(Aesthetics.BGColor);
-			tier2FilterPanel.add(tier2Input,BorderLayout.NORTH);
-			
-			tier2FilterText = new JTextField(20);
-			tier2Input.add(tier2FilterText);
-			tier2FilterText.setBorder(javax.swing.BorderFactory.createEmptyBorder());
-		
-			JButton tier2Button = Aesthetics.createSimpleButton("Apply Tier 2");
-			tier2Button.addActionListener(this);
-			tier2Button.setActionCommand("Tier 2 Apply Filter");
-			tier2Input.add(tier2Button);
-			tier2TextArea = new JTextArea(7,10);
-			tier2FilterPanel.add(tier2TextArea,BorderLayout.SOUTH);
-			tier2TextArea.setEditable(false);
-			tier2TextArea.setForeground(Aesthetics.textColor);
-			tier2TextArea.setFont(Aesthetics.robotoFont);
-			tier2TextArea.setBackground(Color.decode("#141d26"));
-			*/
-			
-			
-			
+			filesOpenedTable = new JTable(arrayListToObject(filesOpenedTableData,1), filesOpenedColumnNames);
+			JScrollPane filesOpenedScrollPane = new JScrollPane(filesOpenedTable);
+			filesOpenedScrollPane.setPreferredSize((new Dimension(100, 140)));
+			filesOpenedPanel.add(filesOpenedScrollPane,BorderLayout.SOUTH);
+			}
 			
 		//Tier1 Filter
-			JPanel tier1FilterPanel = Aesthetics.createBorderedPanel("Tier1 Filter");
+			JPanel tier1FilterPanel = Aesthetics.createBorderedPanel("Transcription Filter");
 			tier1FilterPanel.setLayout((new BorderLayout()));
 			subPanel1.add(tier1FilterPanel);
 			
@@ -229,7 +205,7 @@ public class MainFrame extends JPanel implements ActionListener {
 			tier1Input.add(tier1FilterText);
 			tier1FilterText.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		
-			JButton tier1Button = Aesthetics.createSimpleButton("Apply Tier 1");
+			JButton tier1Button = Aesthetics.createSimpleButton("Apply Transcription Filter");
 			tier1Button.addActionListener(this);
 			tier1Button.setActionCommand("Tier 1 Apply Filter");
 			tier1Input.add(tier1Button);
@@ -240,7 +216,7 @@ public class MainFrame extends JPanel implements ActionListener {
 			tier1FilterPanel.add(tier1ScrollPane,BorderLayout.SOUTH);
 			
 		//Tier2 Filter
-			JPanel tier2FilterPanel = Aesthetics.createBorderedPanel("Tier2 Filter");
+			JPanel tier2FilterPanel = Aesthetics.createBorderedPanel("Transcription Type Filter");
 			tier2FilterPanel.setLayout((new BorderLayout()));
 			subPanel1.add(tier2FilterPanel);
 			
@@ -253,7 +229,7 @@ public class MainFrame extends JPanel implements ActionListener {
 			tier2Input.add(tier2FilterText);
 			tier2FilterText.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		
-			JButton tier2Button = Aesthetics.createSimpleButton("Apply Tier 2");
+			JButton tier2Button = Aesthetics.createSimpleButton("Apply Type Filter");
 			tier2Button.addActionListener(this);
 			tier2Button.setActionCommand("Tier 2 Apply Filter");
 			tier2Input.add(tier2Button);
@@ -264,7 +240,7 @@ public class MainFrame extends JPanel implements ActionListener {
 			tier2FilterPanel.add(tier2ScrollPane2,BorderLayout.SOUTH);
 		
 		//Tier2 Percentage
-			JPanel tier2PercenPanel = Aesthetics.createBorderedPanel("Tier2 Percentage Breakdown");
+			JPanel tier2PercenPanel = Aesthetics.createBorderedPanel("Transcription Type Percentage Breakdown");
 			tier2PercenPanel.setLayout((new BorderLayout()));
 			subPanel1.add(tier2PercenPanel);
 			
@@ -274,17 +250,6 @@ public class MainFrame extends JPanel implements ActionListener {
 			tier2PercenPanel.add(tier2PercenScrollPane2,BorderLayout.SOUTH);
 			
 			Filter.populateTier2Percen(data);
-			
-		
-		//Padding
-			/*
-			if(mode == 1) {
-				JPanel padding = new JPanel();
-				padding.setBackground(Aesthetics.BGColor);
-				subPanel1.add(padding);
-			}
-			*/
-		
 	
 	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    frame.pack();
@@ -292,6 +257,96 @@ public class MainFrame extends JPanel implements ActionListener {
 	    else if(mode == 2) frame.setSize(WIN_WIDTH2, WIN_HEIGHT2);
 	    frame.setResizable(false);
 	    frame.setVisible(true);
+	}
+
+	
+	public void actionPerformed(ActionEvent e) {
+		String actionCommand = e.getActionCommand();
+		
+	    if (actionCommand.equals("Open Action")) {
+	    	ReadCSV.openFile(this, ReadCSV.REPLACE_DATA);
+	    	clearFields();
+	    	Filter.populateTier2Percen(data);
+	    	barPanel.repaint();
+	    } else if (actionCommand.equals("Exit Action")){
+	    	System.exit(0);
+	    } else if (actionCommand.equals("Tier 2 Apply Filter")){
+	    	Filter.applyTierFilter(tier2FilterText.getText(), data, 2);
+	    } else if (actionCommand.equals("Tier 1 Apply Filter")){
+	    	Filter.applyTierFilter(tier1FilterText.getText(), data, 1);
+	    }else if (actionCommand.equals("Mode 2 Add Files")){ //MultiMode Add Files
+	    	ReadCSV.getFC().setMultiSelectionEnabled(true);
+	    	ReadCSV.openFile(this, ReadCSV.APPEND_DATA);
+	    	clearFields();
+	    	Filter.populateTier2Percen(data);
+	    }else if (actionCommand.equals("Mode 2 Close Files")){ //MultiMode Close Files
+	    	data.clear();
+	    	filesOpenedTableData.clear();
+	    	clearFields();
+	    	updateFilesOpenedTable();
+	    } else if (actionCommand.equals("Switch Mode")){
+	    	frame.dispose();
+	    	filesOpenedTableData.clear();
+	    	if(mode == 2) updateFilesOpenedTable();
+	    	ModeSelect.getModeSelectFrame().setVisible(true);
+	    }else { //Case of incorrect action, button not completely implemented, etc. 
+	       System.out.println("Action not supported");
+	    }
+	} 
+	
+	public static void updateTier1Table() {//updates table with new data 
+		tier1Table.setModel(new DefaultTableModel(arrayListToObject(tier1TableData,3),tierColumnNames));
+		tier1TableData.clear();
+	}
+	
+	public static void updateTier2Table() {//updates table with new data 
+		tier2Table.setModel(new DefaultTableModel(arrayListToObject(tier2TableData,3),tierColumnNames));
+		tier2TableData.clear();
+	}
+	
+	public static void updateTier2PercenTable() {//updates table with new data 
+		tier2PercenTable.setModel(new DefaultTableModel(arrayListToObject(tier2PercenTableData,2),tier2PercenColumnNames));
+		tier2PercenTableData.clear();
+	}
+	
+	public static void updateFilesOpenedTable() {//updates table with new data 
+		if(!(filesOpenedTableData == null)) {
+			filesOpenedTable.setModel(new DefaultTableModel(arrayListToObject(filesOpenedTableData,1),filesOpenedColumnNames));
+		}
+	}
+	
+	public static Object[][] arrayListToObject(List<List<String>> tableData, int cols) {// converts arraylist to array of objects
+		Object[][] tableDataObject = new Object[tableData.size()][];
+		
+		for (int i = 0; i < tableData.size(); i++)
+		{
+			tableDataObject[i] = new Object[cols];
+			for (int j = 0; j < cols; j++) {
+				//System.out.println("hi " +tableData.get(i).get(j) + " i: " + i + " j: "+ j);
+				//System.out.println("cols: " + cols + " size: " + tableData.size());
+				tableDataObject[i][j] = tableData.get(i).get(j);
+			}
+		}
+		return tableDataObject;
+	}
+	
+	private static void clearFields() {//Make all fields blank
+		//setTier2TextArea("");
+		tier2FilterText.setText("");
+		tier1FilterText.setText("");
+		tier1TableData.clear();
+		tier2TableData.clear();
+		tier2PercenTableData.clear();
+		updateTier1Table();
+		updateTier2Table();
+		updateTier2PercenTable();
+		
+		if(mode == 1) setDescTable("","","","","",null,null);
+		if(mode == 2) updateFilesOpenedTable();
+	}
+	
+	public static void setMainFrameData(List<List<String>> newData) {
+		data = newData;
 	}
 	
 	public static void setDescTable(String line, String subject, String tier1, String tier2, String tier3, String tMin, String tMax) {
@@ -304,42 +359,6 @@ public class MainFrame extends JPanel implements ActionListener {
 		descTable.getModel().setValueAt(tMax,6,1);
 	}
 	
-	public void actionPerformed(ActionEvent e) {
-		String actionCommand = e.getActionCommand();
-		
-	    if (actionCommand.equals("Open Action")) {
-	    	ReadCSV.openFile(this, ReadCSV.REPLACE_DATA);
-	    	clearFields();
-	    	barPanel.repaint();
-	    } else if (actionCommand.equals("Exit Action")){
-	    	System.exit(0);
-	    } else if (actionCommand.equals("Tier 2 Apply Filter")){
-	    	Filter.applyTierFilter(tier2FilterText.getText(), data, 2);
-	    } else if (actionCommand.equals("Tier 1 Apply Filter")){
-	    	Filter.applyTierFilter(tier1FilterText.getText(), data, 1);
-	    }else if (actionCommand.equals("Mode 2 Add Files")){
-	    	ReadCSV.getFC().setMultiSelectionEnabled(true);
-	    	ReadCSV.openFile(this, ReadCSV.APPEND_DATA);
-	    	clearFields();
-	    }else if (actionCommand.equals("Mode 2 Close Files")){
-	    	data.clear();
-	    	clearFields();
-	    } else if (actionCommand.equals("Switch Mode")){
-	    	frame.dispose();
-	    	ModeSelect.getModeSelectFrame().setVisible(true);
-	    }else {
-	       System.out.println("Action not supported");
-	    }
-	} 
-	
-	public static void setMainFrameData(List<List<String>> newData) {
-		data = newData;
-	}
-	
-	public static List<List<String>> getMainFrameData() {
-		return data;
-	}
-	
 	public static void setTier2TextArea(String text) {
 		tier2TextArea.setText(text);
 	}
@@ -348,53 +367,20 @@ public class MainFrame extends JPanel implements ActionListener {
 		return tier1TableData;
 	}
 	
-	public static void updateTier1Table() {
-		tier1Table.setModel(new DefaultTableModel(arrayListToObject(tier1TableData,3),tierColumnNames));
-		tier1TableData.clear();
+	public static List<List<String>> getMainFrameData() {
+		return data;
 	}
 	
 	public static List<List<String>> getTier2TableData() {
 		return tier2TableData;
 	}
 	
-	public static void updateTier2Table() {
-		tier2Table.setModel(new DefaultTableModel(arrayListToObject(tier2TableData,3),tierColumnNames));
-		tier2TableData.clear();
-	}
-	
 	public static List<List<String>> getTier2PercenTableData() {
 		return tier2PercenTableData;
 	}
 	
-	public static void updateTier2PercenTable() {
-		tier2PercenTable.setModel(new DefaultTableModel(arrayListToObject(tier2PercenTableData,2),tier2PercenColumnNames));
-		tier2PercenTableData.clear();
-	}
-	
-	
-	public static Object[][] arrayListToObject(List<List<String>> tableData, int cols) {
-		Object[][] tableDataObject = new Object[tableData.size()][];
-		
-		for (int i = 0; i < tableData.size(); i++)
-		{
-			tableDataObject[i] = new Object[cols];
-			for (int j = 0; j < cols; j++) {
-				System.out.println("i: "+ i + ", j: "+ j);
-				tableDataObject[i][j] = tableData.get(i).get(j);
-				//tableDataObject[i][1] = tableData.get(i).get(1);
-				//tableDataObject[i][2] = tableData.get(i).get(2);
-			}
-		}
-		return tableDataObject;
-	}
-	
-	private static void clearFields() {
-		setTier2TextArea("");
-		tier2FilterText.setText("");
-		tier1FilterText.setText("");
-		tier1TableData.clear();
-		updateTier1Table();
-		if(mode == 1) setDescTable("","","","","",null,null);
+	public static List<List<String>> getFilesOpenedTableData() {
+		return filesOpenedTableData;
 	}
 	
 }

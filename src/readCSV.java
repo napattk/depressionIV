@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import javax.swing.JFileChooser;
-import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class ReadCSV {
 	
@@ -21,7 +21,7 @@ public class ReadCSV {
         printData(lines);
     }	
 	
-	public static List<List<String>> readData(String FileName) {
+	public static List<List<String>> readData(String FileName) {//Read contents of file nad return
 		Scanner scanner = null;
 		lines= new ArrayList<>();
 		try {
@@ -48,7 +48,7 @@ public class ReadCSV {
         return lines;
 	}
 	
-	public static void printData(List<List<String>> data) {
+	public static void printData(List<List<String>> data) {// Debug: print contents of read file
 		
 		for(int i = 0; i < data.size();i++ ) {
 			for(int j= 0; j < data.get(i).size();j++ ) {
@@ -58,26 +58,25 @@ public class ReadCSV {
 		}
 		
 	}
+
 	
-	public static JFileChooser getFC() {
-		return fc;
-	}
-	
-	public static void openFile(MainFrame frame, int openFileMode) {
+	public static void openFile(MainFrame frame, int openFileMode) { //opens file and sets content bar
 		File file = null;
 		int returnVal = fc.showOpenDialog(frame);
 		
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
-			if(openFileMode == REPLACE_DATA) { //mode replace
+			if(openFileMode == REPLACE_DATA) { //Replace data with new data
+				fc.setMultiSelectionEnabled(false);
 				file = fc.getSelectedFile();
 				
 				String filename = file.getName();
 		        System.out.println("Opening: " + file.getAbsolutePath() + "." );
 		        
 		        String extension =  filename.substring(filename.indexOf("."));
-		        System.out.println(extension);
+		        //System.out.println(extension);
 		        
 		        if(!extension.equals(".csv")) {
+		        	JOptionPane.showMessageDialog(frame, "Unsupported file type selected.");
 		        	System.out.println("Unsupported file type selected.");
 		        }
 		        else {
@@ -89,18 +88,24 @@ public class ReadCSV {
 				        frame.repaint();
 				       
 			    }
-			} else if (openFileMode == APPEND_DATA) { //mode append
+			} else if (openFileMode == APPEND_DATA) { //Append current data with new data
+				fc.setMultiSelectionEnabled(true);
 	        	File[] files = fc.getSelectedFiles();
 	        	for(int i = 0; i < files.length; i++) {
 	        		
+	        		
 		        	String filename = files[i].getName();
 		            System.out.println("Opening: " + files[i].getAbsolutePath() + "." );
-		    	
-		            String extension =  filename.substring(filename.indexOf("."));
-		            System.out.println(extension);
-		        	
 		            
+		            //Update files opened table
+		            List<List<String>> filesOpened = MainFrame.getFilesOpenedTableData();
+		            filesOpened.add(new ArrayList<String>());
+		            filesOpened.get(filesOpened.size()-1).add(filename);
+		            
+		            String extension =  filename.substring(filename.indexOf("."));
+		        	
 		            if(!extension.equals(".csv")) {
+		            	JOptionPane.showMessageDialog(frame, "Unsupported file type selected.");
 		            	System.out.println("Unsupported file type selected.");
 		            }
 		            else {
@@ -111,10 +116,18 @@ public class ReadCSV {
 			        	frame.repaint();
 		            }
 	            }
+	        	MainFrame.updateFilesOpenedTable();
+	        	
 	        }
 
 		} else {
 			  System.out.println("Open command cancelled by user." );
 		}
 	}
+	
+	public static JFileChooser getFC() {
+		return fc;
+	}
+	
+
 }

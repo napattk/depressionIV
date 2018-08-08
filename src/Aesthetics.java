@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.GraphicsEnvironment;
 import java.io.File;
+import java.text.DecimalFormat;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -16,9 +17,11 @@ public class Aesthetics {
 		public static Color BGColor = Color.decode("#334c66");
 		public static Color borderColor = Color.decode("#fab81e");
 		public static Color textColor = Color.decode("#ffffff");
+		static DecimalFormat twoDecimals = new DecimalFormat("#.##");
 		static Font robotoFont;
 		
 		Aesthetics(){
+			//set font
 			try {
 			    robotoFont = Font.createFont(Font.TRUETYPE_FONT, new File("roboto.ttf")).deriveFont(12f);
 			    GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
