@@ -22,7 +22,7 @@ public class BarPanel extends JPanel implements MouseMotionListener{
 	private int my = 0;
 	private JTable descTable;
 	
-	Color color[] = {
+	Color color[] = { //Colors for content bar
 			Color.decode("#39342f"), Color.decode("#800000"),
 			Color.decode("#ed1b24"), Color.decode("#f26223"), Color.decode("#faa41b"), 
 			Color.decode("#ffd203"), Color.decode("#fff205"), Color.decode("#91c74b"),
@@ -80,8 +80,6 @@ public class BarPanel extends JPanel implements MouseMotionListener{
 	    	  
 	    	  rectWidth = (double) ((tMax-tMin)/totalTime)*MAX_BAR_WIDTH;
 	    	  
-	    	  //System.out.println("rectX:" +rectX + " rectY:" +rectY+" rectWidth:"+rectWidth+ " rectHeight:"+rectHeight);
-	    	  
 	    	  Graphics2D g2d = (Graphics2D) g;
 	    	  Rectangle2D r2d = new Rectangle2D.Double(rectX, rectY, rectWidth, rectHeight);
 	    	  
@@ -130,18 +128,14 @@ public class BarPanel extends JPanel implements MouseMotionListener{
 	            	String[] clauseSplit = tier2.split("_");
 	   
 	            	if(clauseSplit[clauseSplit.length-1].matches("(?i)(exp).*")) { //Count clauses by experimenter
-	            		//System.out.print(clauseSplit[clauseSplit.length-1]);
 	            		return 1;
 	            	}else { //Count clauses by participant
 	            		return 0;
 	            	}
 	            }
 	        }
-		
-		
+
 		tier2List.add(tier2);
-		//System.out.println(tier2List.get(i) + " added");
-		//System.out.println(tier2List.size());
 		return i+1;
 	}
 	

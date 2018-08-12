@@ -331,7 +331,6 @@ public class MainFrame extends JPanel implements ActionListener {
 	}
 	
 	private static void clearFields() {//Make all fields blank
-		//setTier2TextArea("");
 		tier2FilterText.setText("");
 		tier1FilterText.setText("");
 		tier1TableData.clear();

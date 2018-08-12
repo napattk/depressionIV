@@ -69,14 +69,7 @@ public class ModeSelect extends JPanel implements ActionListener{
 	    	fc.setMultiSelectionEnabled(true);
 	    	List<List<String>> dataSet = getFileData(MULTI_MODE);
 	    	MainFrame mainPanel = new MainFrame(dataSet,2);
-	    	/*
-	    	if(dataSet == null) {//If filechooser canceled, show mode select frame
-	    		frame.setVisible(true);
-	    		System.out.println("Error ModeSelect MultiMode: Data set is null, or user canceled operation.");
-	    	}else {
-	    		MainFrame mainPanel = new MainFrame(dataSet,2);
-	    	} 
-	    	*/
+
 	    } else if (actionCommand.equals("Exit")){
 	    	System.exit(0);
 	    }else {
@@ -100,7 +93,6 @@ public class ModeSelect extends JPanel implements ActionListener{
 		            System.out.println("Opening: " + files[i].getAbsolutePath() + "." );
 		    	
 		            String extension =  filename.substring(filename.indexOf("."));
-		            //System.out.println(extension);
 		            
 		            //Update files opened table
 		            List<List<String>> filesOpened = MainFrame.getFilesOpenedTableData();
@@ -131,8 +123,7 @@ public class ModeSelect extends JPanel implements ActionListener{
 		            System.out.println("Opening: " + files.getAbsolutePath() + "." );
 		    	
 		            String extension =  filename.substring(filename.indexOf("."));
-		            //System.out.println(extension);
-		        	
+
 		            
 		            if(!extension.equals(".csv")) {
 		            	JOptionPane.showMessageDialog(frame, "Unsupported file type selected.");

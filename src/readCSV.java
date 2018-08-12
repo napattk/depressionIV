@@ -73,7 +73,6 @@ public class ReadCSV {
 		        System.out.println("Opening: " + file.getAbsolutePath() + "." );
 		        
 		        String extension =  filename.substring(filename.indexOf("."));
-		        //System.out.println(extension);
 		        
 		        if(!extension.equals(".csv")) {
 		        	JOptionPane.showMessageDialog(frame, "Unsupported file type selected.");
