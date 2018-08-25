@@ -1,0 +1,241 @@
+line,subject,tier2,tier3,tier1,tmin,tmax
+1,CF34WOM_28,noise,?,{noise},0,0.629
+2,CF34WOM_28,clause1_exp-s1,exp,"""allora""",0.629,1.065
+3,CF34WOM_28,len_exp,?,:::a_exp,1.065,1.21
+4,CF34WOM_28,sil_exp,?,(.)_exp,1.21,1.342
+5,CF34WOM_28,clause1_exp-s2,exp,"""mi parleresti di u/""",1.342,2.259
+6,CF34WOM_28,len_exp,?,:::u_exp,2.259,2.598
+7,CF34WOM_28,clause1_exp-s3,exp,"""n film che ti e' piaciuto?""",2.598,3.651
+8,CF34WOM_28,clause2_exp-s1,exp,"""tipo""",3.651,3.923
+9,CF34WOM_28,len_exp,?,:::o_exp,3.923,4.046
+10,CF34WOM_28,clause2_exp-s2,exp,"""un po' la trama""",4.046,4.92
+11,CF34WOM_28,sil_exp,?,(.)_exp,4.92,5.109
+12,CF34WOM_28,clause2_exp-s3,exp,"""come si e' svolta?""",5.109,5.943
+13,CF34WOM_28,silV-s,?,(.)v,5.943,6.105
+14,CF34WOM_28,fil,?,:e,6.105,6.929
+15,CF34WOM_28,clause1-s1,sub,uno dei miei film preferiti e' sicuramente,6.929,9.154
+16,CF34WOM_28,sil,?,(.),9.154,9.298
+17,CF34WOM_28,fil,?,:e,9.298,10.075
+18,CF34WOM_28,clause1-s2,sub,e' sicuramente ritorno al futuro,10.075,12.293
+19,CF34WOM_28,sil,?,(.),12.293,13.045
+20,CF34WOM_28,fil,?,:e,13.045,14.624
+21,CF34WOM_28,clause2-s1,sub,il prota- il protagonista e' un ragazzo,14.624,17.188
+22,CF34WOM_28,sil,?,(.),17.188,17.487
+23,CF34WOM_28,clause3-s1,sub,che si chiama Marty,17.487,18.514
+24,CF34WOM_28,sil,?,(.),18.514,19.251
+25,CF34WOM_28,fil,?,:e,19.251,20.356
+26,CF34WOM_28,sil,?,(.),20.356,20.443
+27,CF34WOM_28,clause4-s1,sub,che,20.443,20.757
+28,CF34WOM_28,fil,?,:e,20.757,21.087
+29,CF34WOM_28,clause4-s2,sub,e' amico,21.087,21.943
+30,CF34WOM_28,len,f,:::o,21.943,22.384
+31,CF34WOM_28,sil,?,(.),22.384,22.498
+32,CF34WOM_28,clause4-s3,sub,con uno scenziato,22.498,23.652
+33,CF34WOM_28,sil,?,(.),23.652,24.203
+34,CF34WOM_28,fil,?,:e,24.203,24.644
+35,CF34WOM_28,clause5-s1,sub,il quale costruisce una macchina del tempo,24.644,26.637
+36,CF34WOM_28,sil,?,(.),26.637,27.205
+37,CF34WOM_28,fil,?,:e,27.205,28.799
+38,CF34WOM_28,clause6-s1,sub,con questa,28.799,29.519
+39,CF34WOM_28,len,f,:::a,29.519,29.614
+40,CF34WOM_28,clause6-s2,sub,macchina del tempo,29.614,30.904
+41,CF34WOM_28,sil,?,(.),30.904,31.007
+42,CF34WOM_28,fil,?,:e,31.007,31.38
+43,CF34WOM_28,clause6-s3,sub,il protagonista,31.38,32.52
+44,CF34WOM_28,len,f,:::a,32.52,32.715
+45,CF34WOM_28,len,?,:e,32.715,33.637
+46,CF34WOM_28,sil,?,(.),33.637,33.813
+47,CF34WOM_28,clause6-s4,sub,torna per u/,33.813,34.524
+48,CF34WOM_28,len,m,:::u,34.524,34.724
+49,CF34WOM_28,clause6-s5,sub,n,34.724,34.853
+50,CF34WOM_28,len,f,:::n,34.853,35.097
+51,CF34WOM_28,sil,?,(.),35.097,35.18
+52,CF34WOM_28,clause6-s6,sub,caso,35.18,35.641
+53,CF34WOM_28,len,f,:::o,35.641,35.837
+54,CF34WOM_28,sil,?,(.),35.837,36.346
+55,CF34WOM_28,fil,?,:em,36.346,37.992
+56,CF34WOM_28,sil,?,(.),37.992,38.126
+57,CF34WOM_28,clause6-s7,sub,diciamo per una coincidenza sbagliata,38.126,40.388
+58,CF34WOM_28,sil,?,(.),40.388,40.898
+59,CF34WOM_28,clause6-s8,sub,torna indietro nel tempo,40.898,42.297
+60,CF34WOM_28,sil,?,(.),42.297,42.782
+61,CF34WOM_28,fil,?,:e,42.782,43.133
+62,CF34WOM_28,clause7-s1,sub,a quando i suoi genitori erano raga,43.133,45.095
+63,CF34WOM_28,noise,?,{noise},45.095,45.853
+64,CF34WOM_28,clause8-s1,sub,ed frequentavano il liceo,45.853,47.397
+65,CF34WOM_28,sil,?,(.),47.397,47.842
+66,CF34WOM_28,clause9-s1,sub,quindi,47.842,48.217
+67,CF34WOM_28,sil,?,(.),48.217,48.296
+68,CF34WOM_28,clause9-s2,sub,conosce i genitori da,48.296,49.69
+69,CF34WOM_28,len,f,:::a,49.69,49.969
+70,CF34WOM_28,sil,?,(.),49.969,50.045
+71,CF34WOM_28,clause9-s3,sub,da ragazzi,50.045,50.813
+72,CF34WOM_28,sil,?,(.),50.813,51.283
+73,CF34WOM_28,clause10-s1,sub,e per u/,51.283,51.752
+74,CF34WOM_28,len,m,:::u,51.752,51.945
+75,CF34WOM_28,clause10-s2,sub,n,51.945,52.026
+76,CF34WOM_28,len,f,:::n,52.026,52.312
+77,CF34WOM_28,clause10-s3,sub,insieme di,52.312,53.105
+78,CF34WOM_28,len,f,:::i,53.105,53.356
+79,CF34WOM_28,clause10-s4,sub,eventi,53.356,54.084
+80,CF34WOM_28,sil,?,(.),54.084,54.453
+81,CF34WOM_28,fil,?,:e,54.453,55.14
+82,CF34WOM_28,clause10-s5,sub,si intromette nel,55.14,56.917
+83,CF34WOM_28,len,f,:::l,56.917,57.179
+84,CF34WOM_28,fil,?,:m,57.179,58.022
+85,CF34WOM_28,clause10-s6,sub,nella,58.022,58.502
+86,CF34WOM_28,len,f,:::a,58.502,59.047
+87,CF34WOM_28,noise,?,{noise},59.047,59.357
+88,CF34WOM_28,clause10-s7,sub,nella loro vita diciamo,59.357,60.621
+89,CF34WOM_28,sil,?,(.),60.621,61.168
+90,CF34WOM_28,fil,?,:e,61.168,62.252
+91,CF34WOM_28,clause11-s1,sub,e,62.252,62.344
+92,CF34WOM_28,sil,?,(.),62.344,62.502
+93,CF34WOM_28,clause11-s2,sub,quindi,62.502,63.108
+94,CF34WOM_28,fil,?,:ehm,63.108,63.946
+95,CF34WOM_28,clause11-s3,sub,perde le sue,63.946,65.015
+96,CF34WOM_28,len,f,:::e,65.015,65.874
+97,CF34WOM_28,fil,?,:ehm,65.874,66.927
+98,CF34WOM_28,clause11-s4,sub,diciamo azioni sbagliate,66.927,68.864
+99,CF34WOM_28,sil,?,(.),68.864,69.314
+100,CF34WOM_28,fil,?,:e,69.314,70.142
+101,CF34WOM_28,sil,?,(.),70.142,70.287
+102,CF34WOM_28,clause12-s1,sub,cambia il corso del tempo,70.287,71.856
+103,CF34WOM_28,sil,?,(.),71.856,72.294
+104,CF34WOM_28,fil,?,:e,72.294,72.472
+105,CF34WOM_28,clause13-s1,sub,per cui,72.472,72.951
+106,CF34WOM_28,len,f,:::i,72.951,73.205
+107,CF34WOM_28,clause13-s2,sub,"succederanno tutte una serie di cose, di eventi",73.205,75.967
+108,CF34WOM_28,clause14-s1,sub,che,75.967,76.246
+109,CF34WOM_28,fil,?,:e,76.246,76.388
+110,CF34WOM_28,clause14-s2,sub,lo porteranno a dover riparare,76.388,78.575
+111,CF34WOM_28,fil,?,:m,78.575,78.86
+112,CF34WOM_28,clause14-s3,sub,diciamo,78.86,79.407
+113,CF34WOM_28,len,f,:::o,79.407,79.611
+114,CF34WOM_28,sil,?,(.),79.611,80.081
+115,CF34WOM_28,len,?,:e,80.081,80.968
+116,CF34WOM_28,sil,?,(.),80.968,81.023
+117,CF34WOM_28,clause14-s4,sub,quelli che sono stati i suoi erro/,81.023,82.374
+118,CF34WOM_28,len,m,:::o,82.374,82.49
+119,CF34WOM_28,clause14-s5,sub,ri,82.49,82.661
+120,CF34WOM_28,sil,?,(.),82.661,83.084
+121,CF34WOM_28,fil,?,:e,83.084,83.269
+122,CF34WOM_28,clause15-s1,sub,onde evitare che,83.269,84.489
+123,CF34WOM_28,sil,?,(.),84.489,84.563
+124,CF34WOM_28,fil,?,:e,84.563,85.431
+125,CF34WOM_28,clause15-s2,sub,lui non nasca mai diciamo,85.431,87.009
+126,CF34WOM_28,sil,?,(.),87.009,87.632
+127,CF34WOM_28,fil,?,:e,87.632,88.521
+128,CF34WOM_28,sil,?,(.),88.521,88.633
+129,CF34WOM_28,clause16-s1,sub,quindi,88.633,89.12
+130,CF34WOM_28,len,f,:::i,89.12,90.188
+131,CF34WOM_28,clause16-s2,sub,niente,90.188,90.912
+132,CF34WOM_28,fil,?,:m,90.912,91.18
+133,CF34WOM_28,clause16-s3,sub,e' un film che,91.18,91.909
+134,CF34WOM_28,sil,f,:::e,91.909,92.115
+135,CF34WOM_28,clause16-s4,sub,io amo sin da piccolina,92.115,93.658
+136,CF34WOM_28,sil,?,(.),93.658,94.22
+137,CF34WOM_28,fil,?,:e,94.22,94.654
+138,CF34WOM_28,ove,?,[],94.654,95.084
+139,CF34WOM_28,clause3_exp-s1,exp,"""la trilogia qual'e' il tuo preferito?""",95.084,96.401
+140,CF34WOM_28,silV-s,?,(.)v,96.401,96.581
+141,CF34WOM_28,fil,?,:e,96.581,96.745
+142,CF34WOM_28,clause17-s1,sub,di tutta la trilogia,96.745,98.032
+143,CF34WOM_28,len,f,:::a,98.032,98.973
+144,CF34WOM_28,clause17-s2,sub,oddio,98.973,99.38
+145,CF34WOM_28,noise,?,{noise},99.38,99.757
+146,CF34WOM_28,clause17-s3,sub,cile ,99.757,100.069
+147,CF34WOM_28,len,f,:::e,100.069,100.272
+148,CF34WOM_28,clause17-s4,sub,diciamo che la trilogia e' diff-,100.272,101.581
+149,CF34WOM_28,fil,?,:m,101.581,101.849
+150,CF34WOM_28,clause17-s5,sub, non si potrebbe scomporre,101.849,103.377
+151,CF34WOM_28,clause18-s1,sub,perche',103.377,103.742
+152,CF34WOM_28,len,f,:::e,103.742,104.072
+153,CF34WOM_28,clause18-s2,sub,e' e' un tutt'uno per chi e' appasionato,104.072,106.267
+154,CF34WOM_28,sil,?,(.),106.267,106.767
+155,CF34WOM_28,clause19-s1,sub,pero' il primo e' sicuramente piu' emozionante,106.767,109.076
+156,CF34WOM_28,sil,?,(.),109.076,110.463
+157,CF34WOM_28,ove,?,[],110.463,113.034
+158,CF34WOM_28,clause20-s1,sub,ggio del film che mi piace di piu',113.034,115.052
+159,CF34WOM_28,len,f,:::u,115.052,115.489
+160,CF34WOM_28,clause21-s1,sub,il personaggio del film che mi piace di piu',115.489,117.592
+161,CF34WOM_28,clause22-s1,sub,vabbe',117.592,117.829
+162,CF34WOM_28,fil,?,:e,117.829,118.488
+163,CF34WOM_28,clause22-s2,sub,diciamo che Marti Mcfly,118.488,120.664
+164,CF34WOM_28,clause23-s1,sub,cosi' e' il suo nome,120.664,121.568
+165,CF34WOM_28,len,f,:::e,121.568,121.871
+166,CF34WOM_28,sil,?,(.),121.871,122.276
+167,CF34WOM_28,len,s,:::e,122.276,122.425
+168,CF34WOM_28,clause22-s3,sub,e' sicuramente il personaffio migliore,122.425,124.29
+169,CF34WOM_28,sil,?,(.),124.29,124.699
+170,CF34WOM_28,clause23-s1,sub,pero' diciamo che tutti i personaggi sono,124.699,126.692
+171,CF34WOM_28,len,f,:::o,126.692,127.074
+172,CF34WOM_28,clause23-s2,sub,sono molto interessanti,127.074,128.6
+173,CF34WOM_28,len,f,:::i,128.6,128.781
+174,CF34WOM_28,clause24-s1,sub,io lo trovo un film,128.781,129.714
+175,CF34WOM_28,len,f,:::m,129.714,130.198
+176,CF34WOM_28,sil,?,(.),130.198,130.689
+177,CF34WOM_28,fil,?,:e,130.689,131.398
+178,CF34WOM_28,sil,?,(.),131.398,131.488
+179,CF34WOM_28,clause24-s2,sub,veramente fatto bene,131.488,132.827
+180,CF34WOM_28,clause25-s1,sub,e' molto bello,132.827,133.959
+181,CF34WOM_28,fil,?,:e,133.959,135.518
+182,CF34WOM_28,noise,?,{noise},135.518,135.692
+183,CF34WOM_28,clause26-s1,sub,insomma mi mi e' nel cuore ,135.692,137.176
+184,CF34WOM_28,len,f,:::e,137.176,137.5
+185,CF34WOM_28,clause27-s1,sub,da quando sono piccola,137.5,138.624
+186,CF34WOM_28,SilV-e,?,(.)v,138.624,138.968
+187,CF34WOM_28,len_exp,?,:::m_exp,138.968,139.367
+188,CF34WOM_28,clause4_exp-s1,exp,"""ma lo vedesti al cinema la prima volt""",139.367,140.835
+189,CF34WOM_28,ove,?,[],140.835,141.107
+190,CF34WOM_28,clause28-s1,sub,no,141.107,141.265
+191,CF34WOM_28,clause29-s1,sub,ero troppo piccola,141.265,142.279
+192,CF34WOM_28,clause30-s1,sub,perche' e' un film dell'82,142.279,144.435
+193,CF34WOM_28,clause31-s1,sub,non ricorda se l'80 o l'82,144.435,146.635
+194,CF34WOM_28,clause32-s1,sub,io sono nata nell'82,146.635,148.229
+195,CF34WOM_28,clause33-s1,sub,quindi,148.229,148.645
+196,CF34WOM_28,sil,?,(.),148.645,149.176
+197,CF34WOM_28,fil,?,:e,149.176,149.304
+198,CF34WOM_28,clause33-s2,sub,non l'ho visto al cinema,149.304,150.493
+199,CF34WOM_28,sil,f,:::a,150.493,150.818
+200,CF34WOM_28,clause34-s1,sub,fu mio padre a farmi appassionare,150.818,152.711
+201,CF34WOM_28,len,f,:::e,152.711,152.944
+202,CF34WOM_28,clause34-s2,sub,a questo film,152.944,153.861
+203,CF34WOM_28,sil,?,(.),153.861,154.353
+204,CF34WOM_28,clause35-s1,sub,e quindi,154.353,155.021
+205,CF34WOM_28,len,f,:::i,155.021,155.68
+206,CF34WOM_28,clause35-s2,sub,no magari,155.68,156.263
+207,CF34WOM_28,clause36-s1,sub,pero' l'ho rivisto poi,156.263,157.923
+208,CF34WOM_28,sil,?,(.),157.923,158.001
+209,CF34WOM_28,fil,?,:e,158.001,158.207
+210,CF34WOM_28,clause36-s2,sub,al cinema da adulta,158.207,160.04
+211,CF34WOM_28,clause37-s1,sub,perche' lo hanno riproposto,160.04,161.424
+212,CF34WOM_28,clause38-s1,sub,e quindi,161.424,162.102
+213,CF34WOM_28,sil,?,(.),162.102,162.484
+214,CF34WOM_28,fil,?,:e,162.484,163.151
+215,CF34WOM_28,clause38-s2,sub,da vera appasionata sono andata sicuramente a vedere,163.151,165.864
+216,CF34WOM_28,len,f,:::e,165.864,166.161
+217,CF34WOM_28,clause38-s3,sub,tutti e tre i film della trilogia,166.161,168.327
+218,CF34WOM_28,sil,?,(.),168.327,169.038
+219,CF34WOM_28,fil,?,:ehm,169.038,171.235
+220,CF34WOM_28,sil,?,(.),171.235,172.285
+221,CF34WOM_28,clause5_exp-s1,exp,"""senti""",172.285,172.698
+222,CF34WOM_28,len_exp,?,:::i_exp,172.698,172.913
+223,CF34WOM_28,clause6_exp-s1,exp,"""e per esempio un""",172.913,173.563
+224,CF34WOM_28,len_exp,?,:::u_exp,173.563,174.019
+225,CF34WOM_28,clause6_exp-s2,exp,"""l'ultimo film che hai visto al cinema?""",174.019,175.363
+226,CF34WOM_28,ove,?,[],175.363,175.554
+227,CF34WOM_28,clause39-s1,sub,l'ultimo film che ho visto al cinema,175.554,177.493
+228,CF34WOM_28,len,f,:::a,177.493,178.266
+229,CF34WOM_28,clause39-s2,sub,oddio,178.266,178.643
+230,CF34WOM_28,len,f,:::o,178.643,178.92
+231,CF34WOM_28,sil,?,(.),178.92,179.512
+232,CF34WOM_28,fil,?,:e,179.512,180.333
+233,CF34WOM_28,clause39-s3,sub,la bella e la bestia,180.333,181.483
+234,CF34WOM_28,lau,?,[l],181.483,182.21
+235,CF34WOM_28,fil,?,:m,182.21,182.645
+236,CF34WOM_28,clause39-s4,sub,di,182.645,182.833
+237,CF34WOM_28,len,f,:::i,182.833,183.119
+238,CF34WOM_28,clause39-s5,sub,di Wall Disnay c- con mia figlia,183.119,185.122
+239,CF34WOM_28,clause40-s1,sub,"perche' lei e' appasionata di cinema come me, come la madre",185.122,188.027
+240,CF34WOM_28,noise,?,{noise},188.027,193.699

@@ -17,7 +17,7 @@ public class ReadCSV {
 
 
 	public static void main(String[] args){
-        readData("dataSet1.csv");
+        readData("Dataset/Dataset 1.csv");
         printData(lines);
     }	
 	

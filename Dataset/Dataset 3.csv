@@ -1,0 +1,155 @@
+line,subject,tier2,tier3,tier1,tmin,tmax
+1,PF43ATR_68,noise,?,{noise},0,1.182
+2,PF43ATR_68,clause1_exp-s1,exp,"""mi dica come ha trascorso quest'ultima settimana""",1.182,3.641
+3,PF43ATR_68,silV-s,?,(.)v,3.641,5.308
+4,PF43ATR_68,clause1-s1,sub,Molto dolorante,5.308,6.618
+5,PF43ATR_68,sil,?,(.),6.618,6.737
+6,PF43ATR_68,clause1-s2,sub,sono stata allettata con la cervicale,6.737,8.876
+7,PF43ATR_68,sil,?,(.),8.876,9.759
+8,PF43ATR_68,clause2-s1,sub,e' un dolore che mi porto dietro dal mese di luglio,9.759,12.34
+9,PF43ATR_68,clause3-s1,sub,e che comunque mi rende anche molto nervosa,12.34,15.496
+10,PF43ATR_68,sil,?,(.),15.496,16.585
+11,PF43ATR_68,clause4-s1,sub,perchè,16.585,16.885
+12,PF43ATR_68,len,f,:::e,16.885,17.376
+13,PF43ATR_68,clause4-s2,sub,è snervante convivere con lo stesso dolore tutti i giorni,17.376,20.924
+14,PF43ATR_68,silV-e,?,(.)v,20.924,22.666
+15,PF43ATR_68,clause2_exp-s1,exp,"""che cosa ha fatto in particolare?""",22.666,24.32
+16,PF43ATR_68,clause3_exp-s1,exp,"""ha fatto qualcosa?""",24.32,25.473
+17,PF43ATR_68,silV-s,?,(.)v,25.473,25.908
+18,PF43ATR_68,clause5-s1,sub,ho fatto fisioterapia,25.908,27.43
+19,PF43ATR_68,sil,?,(.),27.43,28.479
+20,PF43ATR_68,fil,?,:e,28.479,29.601
+21,PF43ATR_68,clause6-s1,sub,ho f-,29.601,29.867
+22,PF43ATR_68,sil,?,(.),29.867,30.421
+23,PF43ATR_68,clause6-s2,sub,ho fa-,30.421,30.923
+24,PF43ATR_68,clause6-s3,sub,ho preso,30.923,31.288
+25,PF43ATR_68,len,f,:::o,31.288,31.565
+26,PF43ATR_68,clause7-s1,sub,un medicinale,31.565,32.196
+27,PF43ATR_68,clause8-s1,sub,ho fatto terapie farmacologiche,32.196,33.95
+28,PF43ATR_68,sil,?,(.),33.95,34.676
+29,PF43ATR_68,clause9-s1,sub,però,34.676,34.89
+30,PF43ATR_68,len,f,:::o,34.89,35.402
+31,PF43ATR_68,clause9-s2,sub,sto ancora col collare,35.402,36.687
+32,PF43ATR_68,sil,?,(.),36.687,37.783
+33,PF43ATR_68,clause10-s1,sub,e il medico,37.783,38.381
+34,PF43ATR_68,clause10-s2,sub,ha convenuto il mio medico,38.381,39.763
+35,PF43ATR_68,clause11-s1,sub,il medico di,39.763,40.261
+36,PF43ATR_68,len,f,:::i,40.261,40.787
+37,PF43ATR_68,clause11-s2,sub,di famiglia ,40.787,41.257
+38,PF43ATR_68,clause11-s3,sub,ha convenuto di farmi ritornare dalla,41.257,43.199
+39,PF43ATR_68,len,f,:::a,43.199,43.41
+40,PF43ATR_68,sil,?,(.),43.41,43.957
+41,PF43ATR_68,clause11-s4,sub,dalla dottoressa qui,43.957,44.973
+42,PF43ATR_68,clause12-s1,sub,perchè,44.973,45.419
+43,PF43ATR_68,sil,?,(.),45.419,45.523
+44,PF43ATR_68,clause12-s2,sub,per lui e' tutto un fattore di,45.523,47.03
+45,PF43ATR_68,len,f,:::i,47.03,47.269
+46,PF43ATR_68,clause12-s3,sub,di stress,47.269,48.034
+47,PF43ATR_68,sil,?,(.),48.034,48.721
+48,PF43ATR_68,clause13-s1,sub,più,48.721,48.883
+49,PF43ATR_68,len,f,:::u,48.883,49.066
+50,PF43ATR_68,clause13-s2,sub,che,49.066,49.278
+51,PF43ATR_68,len,f,:::e,49.278,49.549
+52,PF43ATR_68,clause13-s3,sub,che scarica,49.549,50.363
+53,PF43ATR_68,len,f,:::a,50.363,50.691
+54,PF43ATR_68,clause13-s4,sub,su,50.691,50.888
+55,PF43ATR_68,len,f,:::u,50.888,51.075
+56,PF43ATR_68,clause13-s5,sub,sulla cervicale,51.075,51.88
+57,PF43ATR_68,clause14-s1,sub,ma,51.88,52.136
+58,PF43ATR_68,sil,?,(.),52.136,52.588
+59,PF43ATR_68,clause14-s2,sub,la vede più come una cosa di stress,52.588,54.136
+60,PF43ATR_68,clause15-s1,sub,perche il tutto è iniziato,54.136,55.5
+61,PF43ATR_68,sil,?,(.),55.5,55.946
+62,PF43ATR_68,clause15-s2,sub,a luglio quando,55.946,56.768
+63,PF43ATR_68,sil,?,(.),56.768,57.071
+64,PF43ATR_68,clause15-s3,sub,ho tolto i farmaci,57.071,58.297
+65,PF43ATR_68,sil,?,(.),58.297,58.583
+66,PF43ATR_68,clause15-s4,sub,che prendevo già con la dottoressa,58.583,60.213
+67,PF43ATR_68,silV-e,?,(.)v,60.213,61.636
+68,PF43ATR_68,clause4_exp-s1,exp,"""mi puo' parlare un po' della sua famiglia?""",61.636,62.956
+69,PF43ATR_68,silV-s,?,(.)v,62.956,63.975
+70,PF43ATR_68,sil,?,(.),63.975,64.335
+71,PF43ATR_68,clause16-s1,sub,ho un,64.335,64.587
+72,PF43ATR_68,len,f,:::n,64.587,64.846
+73,PF43ATR_68,clause16-s2,sub,marito,64.846,65.414
+74,PF43ATR_68,clause16-s3,sub,che,65.414,65.514
+75,PF43ATR_68,len,f,:::e,65.514,65.873
+76,PF43ATR_68,clause16-s4,sub,lavora in polizia,65.873,66.772
+77,PF43ATR_68,len,f,:::a,66.772,66.921
+78,PF43ATR_68,clause17-s1,sub,ho un bimbo di sei anni,66.921,68.184
+79,PF43ATR_68,sil,?,(.),68.184,69.598
+80,PF43ATR_68,fil,?,:e,69.598,70.484
+81,PF43ATR_68,sil,?,(.),70.484,70.808
+82,PF43ATR_68,clause18-s1,sub,fratelli e sorelle che stanno fuori,70.808,72.489
+83,PF43ATR_68,clause19-s1,sub,vivono fuori Avellino,72.489,73.541
+84,PF43ATR_68,clause20-s1,sub,per lavoro sono a Bergamo,73.541,74.933
+85,PF43ATR_68,clause21-s1,sub,poi i miei genitori,74.933,75.747
+86,PF43ATR_68,len,f,:::i,75.747,76.161
+87,PF43ATR_68,clause21-s2,sub,che invece vivono ad Avellino,76.161,77.718
+88,PF43ATR_68,silV-e,?,(.)v,77.718,78.537
+89,PF43ATR_68,clause5_exp-s1,exp,"""lei che cosa fa?""",78.537,79.824
+90,PF43ATR_68,clause22-s1,sub,io mi occupo- sono addetta alle vendite,79.824,81.894
+91,PF43ATR_68,len,f,:::e,81.894,82.223
+92,PF43ATR_68,sil,?,(.),82.223,82.694
+93,PF43ATR_68,clause23-s1,sub,lo conosci progress,82.694,83.983
+94,PF43ATR_68,sil,?,(.),83.983,84.118
+95,PF43ATR_68,clause24-s1,sub,il negozio qui dietro,84.118,85.068
+96,PF43ATR_68,clause25-s1,sub,io lavoro qui,85.068,85.761
+97,PF43ATR_68,sil,?,(.),85.761,86.456
+98,PF43ATR_68,clause26-s1,sub,quindi questo è il periodo,86.456,87.51
+99,PF43ATR_68,len,f,:::o,87.51,87.658
+100,PF43ATR_68,sil,?,(.),87.658,87.762
+101,PF43ATR_68,clause26-s2,sub,clou,87.762,88.041
+102,PF43ATR_68,sil,?,(.),88.041,88.293
+103,PF43ATR_68,clause27-s1,sub,perchè,88.293,88.897
+104,PF43ATR_68,sil,?,(.),88.897,88.995
+105,PF43ATR_68,clause27-s2,sub,periodo natalizio,88.995,89.975
+106,PF43ATR_68,clause27-s3,sub,il periodo di maggiore ,89.975,90.821
+107,PF43ATR_68,lau,?,[l],90.821,90.964
+108,PF43ATR_68,clause27-s4,sub,stress,90.964,91.549
+109,PF43ATR_68,sil,?,(.),91.549,92.168
+110,PF43ATR_68,clause28-s1,sub,anche se io sto lavorando con- nel settore Natale già dal mese di Agosto,92.168,96.007
+111,PF43ATR_68,silV-e,?,(.)v,96.007,97.539
+112,PF43ATR_68,clause6_exp-s1,exp,"""come funziona questo lavoro?"" ",97.539,99.308
+113,PF43ATR_68,clause7-exp-s1,exp,"""me lo puo' spiegare un pochino""",99.308,100.463
+114,PF43ATR_68,silV-s,?,(.)v,100.463,101.48
+115,PF43ATR_68,fil,?,:m,101.48,102.684
+116,PF43ATR_68,clause29-s1,sub,come ha funzionato in questo periodo,102.684,104.273
+117,PF43ATR_68,len,f,:::o,104.273,104.485
+118,PF43ATR_68,clause30-s1,sub,torno indietro ad agosto ,104.485,105.687
+119,PF43ATR_68,clause31-s1,sub,perchè mi sto occupando del Natale,105.687,107.709
+120,PF43ATR_68,len,f,:::e,107.709,107.814
+121,PF43ATR_68,sil,?,(.),107.814,108.341
+122,PF43ATR_68,clause32-s1,sub,quindi da agosto sono stata in ufficio,108.341,109.982
+123,PF43ATR_68,clause33-s1,sub, dove mi sono occupata,109.982,110.983
+124,PF43ATR_68,len,f,:::a,110.983,111.137
+125,PF43ATR_68,sil,?,(.),111.137,111.391
+126,PF43ATR_68,clause33-s2,sub,personalmente della campionatura,111.391,113.162
+127,PF43ATR_68,sil,?,(.),113.162,113.812
+128,PF43ATR_68,clause33-s3,sub,della merce natalizia,113.812,115.235
+129,PF43ATR_68,sil,?,(.),115.235,115.695
+130,PF43ATR_68,clause33-s4,sub,degli allestament- degli allestimenti sala fotografica,115.695,118.337
+131,PF43ATR_68,sil,?,(.),118.337,118.408
+132,PF43ATR_68,clause33-s5,sub,per,118.408,118.628
+133,PF43ATR_68,len,f,:::r,118.628,118.863
+134,PF43ATR_68,clause33-s6,sub,le scenografie,118.863,119.684
+135,PF43ATR_68,sil,?,(.),119.684,119.821
+136,PF43ATR_68,clause33-s7,sub,per,119.821,120.039
+137,PF43ATR_68,len,f,:::r,120.039,120.281
+138,PF43ATR_68,clause33-s8,sub,il foto giornalino,120.281,121.694
+139,PF43ATR_68, sil,?,(.),121.694,122.221
+140,PF43ATR_68,clause34-s1,sub,e adesso da,122.221,122.925
+141,PF43ATR_68,len,f,:::a,122.925,123.283
+142,PF43ATR_68,sil,?,(.),123.283,123.444
+143,PF43ATR_68,clause34-s2,sub,ottobre sono ripassata poi al punto vendita ,123.444,125.753
+144,PF43ATR_68,clause35-s1,sub,dove faccio la personal shopper ,125.753,127.605
+145,PF43ATR_68,clause36-s1,sub,e mi occupo materialmente di seguire i clienti,127.605,130.22
+146,PF43ATR_68,sil,?,(.),130.22,130.697
+147,PF43ATR_68,clause37-s2,sub,nella,130.697,130.913
+148,PF43ATR_68,len,f,:::a,130.913,131.194
+149,PF43ATR_68,clause37-s3,sub,nel consigliarlo,131.194,132.021
+150,PF43ATR_68,clause37-s4,sub,negli acquisti degli alberi e gli addobbi,132.021,133.838
+151,PF43ATR_68,len,f,:::i,133.838,134.013
+152,PF43ATR_68,sil,?,(.),134.013,134.594
+153,PF43ATR_68,clause37-s5,sub,e tutto quello che concerne comunque il Natale,134.594,136.789
+154,PF43ATR_68,noise,?,{noise},136.789,139.659

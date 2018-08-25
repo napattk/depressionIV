@@ -1,0 +1,323 @@
+line,subject,tier2,tier3,tier1,tmin,tmax
+1,CM27WOM_39,noise,?,{noise},0,5.107
+2,CM27WOM_39,fil_exp,?,:e_exp,5.107,5.338
+3,CM27WOM_39,clause1_exp-s1,exp,"""vabbe'ra- raccontami cosa fai nella tua vita?""",5.338,7.485
+4,CM27WOM_39,clause2_exp-s1,exp,"""non lo so""",7.485,7.858
+5,CM27WOM_39,clause3_exp-s1,exp,"""cosa studi?""",7.858,8.63
+6,CM27WOM_39,clause4_exp-s1,exp,"""se lavori?""",8.63,9.372
+7,CM27WOM_39,len_exp,?,:::i_exp,9.372,9.509
+8,CM27WOM_39,clause1-s1,sub,allora studio ingegneria elettronica,9.509,11.192
+9,CM27WOM_39,clause2-s1,sub,mi so per,11.192,11.723
+10,CM27WOM_39,len,f,:::r,11.723,12.114
+11,CM27WOM_39,clause2-s2,sub,laureare,12.114,12.685
+12,CM27WOM_39,len,f,:::e,12.685,12.939
+13,CM27WOM_39,sil,?,(.),12.939,13.328
+14,CM27WOM_39,clause2-s3,sub,ingegneria elettronica,13.328,14.25
+15,CM27WOM_39,clause3-s1,sub,appunto sto facendo un tirocinio alla ST Microeletronics,14.25,16.972
+16,CM27WOM_39,len,f,:::e,16.972,17.364
+17,CM27WOM_39,clause5-exp-s1,exp,"""dove?""",17.364,18.155
+18,CM27WOM_39,clause4-s1,sub,ad Arzano,18.155,18.852
+19,CM27WOM_39,sil,?,(.),18.852,20.309
+20,CM27WOM_39,fil,?,:e,20.309,21.086
+21,CM27WOM_39,sil,?,(.),21.086,21.521
+22,CM27WOM_39,clause5-s1,sub,questo e',21.521,21.992
+23,CM27WOM_39,ove,?,[],21.992,25.12
+24,CM27WOM_39,sil,?,(.),25.12,25.516
+25,CM27WOM_39,clause6-s1,sub,no mi manca,25.516,26.183
+26,CM27WOM_39,len,f,:::a,26.183,26.541
+27,CM27WOM_39,clause6-s2,sub,un ultimo esame prima della laurea,26.541,28.341
+28,CM27WOM_39,len,f,:::a,28.341,28.574
+29,CM27WOM_39,sil,?,(.),28.574,28.978
+30,CM27WOM_39,clause7-s1,sub,sto,28.978,29.369
+31,CM27WOM_39,len,f,:::o,29.369,29.803
+32,CM27WOM_39,sil,?,(.),29.803,30.15
+33,CM27WOM_39,ove,?,[],30.15,30.818
+34,CM27WOM_39,clause6_exp-s1,exp,"""ata?""",30.818,31.297
+35,CM27WOM_39,clause8-s1,sub,microonde,31.297,31.923
+36,CM27WOM_39,sil,?,(.),31.923,32.155
+37,CM27WOM_39,clause8-s2,sub,microonde e circuiti,32.155,33.178
+38,CM27WOM_39,sil,?,(.),33.178,33.749
+39,CM27WOM_39,len,s,:::e,33.749,33.895
+40,CM27WOM_39,clause9-s1,sub,e sto,33.895,34.303
+41,CM27WOM_39,len,f,:::o,34.303,34.922
+42,CM27WOM_39,sil,?,(.),34.922,35.406
+43,CM27WOM_39,lau_exp,?,[l]_exp,35.406,35.892
+44,CM27WOM_39,clause9-s2,sub,lo sto preparando in questa sessione,35.892,37.235
+45,CM27WOM_39,len,f,:::e,37.235,37.415
+46,CM27WOM_39,clause9-s3,sub,estiva,37.415,38.105
+47,CM27WOM_39,fil,?,:e,38.105,38.394
+48,CM27WOM_39,sil,?,(.),38.394,39.099
+49,CM27WOM_39,clause10-s1,sub,nel frattempo,39.099,39.612
+50,CM27WOM_39,len,f,:::o,39.612,39.766
+51,CM27WOM_39,clause10-s2,sub,tengo-,39.766,40.078
+52,CM27WOM_39,len,f,:::o,40.078,40.293
+53,CM27WOM_39,clause10-s3,sub,cioe',40.293,40.574
+54,CM27WOM_39,len,s,:::m,40.574,40.732
+55,CM27WOM_39,clause10-s4,sub,mi tengo impegnato con il tirocinio ,40.732,42.304
+56,CM27WOM_39,clause11-s1,sub,che sto facendo terzo anno,42.304,43.235
+57,CM27WOM_39,clause12-s1,sub,che tra l'altro ho quasi concluso,43.235,44.447
+58,CM27WOM_39,sil,?,(.),44.447,45.43
+59,CM27WOM_39,fil,?,:e,45.43,46.746
+60,CM27WOM_39,clause7_exp-s1,exp,"""e il tirocinio lo stai facendo a""",46.746,47.956
+61,CM27WOM_39,ove,?,[],47.956,49.222
+62,CM27WOM_39,clause13-s1,sub,universita' che,49.222,50.214
+63,CM27WOM_39,len,f,:::e,50.214,50.346
+64,CM27WOM_39,clause13-s2,sub, mi serve anche come tesi,50.346,51.312
+65,CM27WOM_39,sil,?,(.),51.312,52.091
+66,CM27WOM_39,clause13-s3,sub,come tesi di laurea,52.091,53.056
+67,CM27WOM_39,fil,?,:e,53.056,54.229
+68,CM27WOM_39,sil,?,(.),54.229,55.208
+69,CM27WOM_39,clause14-s1,sub,non lo so,55.208,55.695
+70,CM27WOM_39,fil,?,:e,55.695,56.203
+71,CM27WOM_39,fil_exp,?,:e_exp,56.203,56.655
+72,CM27WOM_39,clause8_exp-s1,exp,"""non lo so""",56.655,57.134
+73,CM27WOM_39,clause9_exp-s1,exp,"""hai hai fratelli?""",57.134,58.087
+74,CM27WOM_39,ove,?,[],58.087,58.613
+75,CM27WOM_39,clause15-s1,sub,ah devo-,58.613,58.959
+76,CM27WOM_39,len,f,:::o,58.959,59.126
+77,CM27WOM_39,sil,?,(.),59.126,59.447
+78,CM27WOM_39,clause15-s2,sub,qualsiasi co,59.447,60.022
+79,CM27WOM_39,ove,?,[],60.022,60.79
+80,CM27WOM_39,clause16-s1,sub,io ho,60.79,61.154
+81,CM27WOM_39,len,f,:::o,61.154,61.598
+82,CM27WOM_39,sil,?,(.),61.598,61.945
+83,CM27WOM_39,clause16-s2,sub,ho un fratello e una sorella,61.945,63.02
+84,CM27WOM_39,clause17-s1,sub,entrambi sposati,63.02,63.968
+85,CM27WOM_39,sil,?,(.),63.968,64.688
+86,CM27WOM_39,fil,?,:eh,64.688,65.28
+87,CM27WOM_39,clause18-s1,sub,ho,65.28,65.491
+88,CM27WOM_39,sil,?,(.),65.491,65.645
+89,CM27WOM_39,len,f,:::o,65.645,66.343
+90,CM27WOM_39,sil,?,(.),66.343,66.519
+91,CM27WOM_39,clause18-s2,sub,non so quanti nipoti,66.519,67.57
+92,CM27WOM_39,clause19-s1,sub,un bel po' ne ho,67.57,68.417
+93,CM27WOM_39,lau,?,[l],68.417,69.292
+94,CM27WOM_39,clause21-s1,sub,ho perso il conto,69.292,70.091
+95,CM27WOM_39,clause22-s1,sub,ona tre,70.091,70.824
+96,CM27WOM_39,fil,?,:e,70.824,71.129
+97,CM27WOM_39,clause22-s2,sub,dalla parte di mia,71.129,71.906
+98,CM27WOM_39,len,f,:::a,71.906,72.165
+99,CM27WOM_39,clause23-s1,sub,sorella,72.165,72.881
+100,CM27WOM_39,len,f,:::e,72.881,73.219
+101,CM27WOM_39,clause23-s2,sub,e uno della parte di mio fratello,73.219,74.624
+102,CM27WOM_39,clause24-s1,sub,piu' un altro che sta arrivando,74.624,75.96
+103,CM27WOM_39,sil,?,(.),75.96,76.667
+104,CM27WOM_39,clause25-s1,sub,quindi sono,76.667,77.154
+105,CM27WOM_39,len,f,:::o,77.154,77.541
+106,CM27WOM_39,clause25-s2,sub,zio di c- gia' di cinque nipoti,77.541,79.031
+107,CM27WOM_39,sil,?,(.),79.031,79.549
+108,CM27WOM_39,ove,?,[],79.549,80.48
+109,CM27WOM_39,clause10_exp-s1,exp,"""come fai?""",80.48,81.125
+110,CM27WOM_39,fil,?,:e,81.125,81.334
+111,CM27WOM_39,clause26-s1,sub,con le mazzette no,81.334,82.234
+112,CM27WOM_39,lau,?,[l],82.234,83.112
+113,CM27WOM_39,noise,?,{noise},83.112,83.712
+114,CM27WOM_39,lau,?,[l],83.712,84.392
+115,CM27WOM_39,clause27-s1,sub,piu' che mazzette sono mazzate,84.392,85.92
+116,CM27WOM_39,sil,?,(.),85.92,86.801
+117,CM27WOM_39,fil,?,:e,86.801,87.438
+118,CM27WOM_39,clause28-s1,sub,no comunque sono,87.438,88.198
+119,CM27WOM_39,sil,?,(.),88.198,88.312
+120,CM27WOM_39,clause28-s2,sub,tutti quanti piu' o meno abbastanza piccoli,88.312,89.816
+121,CM27WOM_39,clause29-s1,sub,quindi,89.816,90.198
+122,CM27WOM_39,len,f,:::i,90.198,90.518
+123,CM27WOM_39,sil,?,(.),90.518,90.924
+124,CM27WOM_39,clause29-s2,sub,sul lato mazzette me la scampo in questo senso,90.924,93.009
+125,CM27WOM_39,silV-e,?,(.)v,93.009,93.352
+126,CM27WOM_39,clause11_exp-s1,exp,"""non e' vero?""",93.352,94.091
+127,CM27WOM_39,silV-s,?,(.)v,94.091,94.472
+128,CM27WOM_39,clause30-s1,sub,si,94.472,94.729
+129,CM27WOM_39,ove,?,[],94.729,95.072
+130,CM27WOM_39,clause12_exp-s1,exp,"""poesia di Natale come fa?""",95.072,96.012
+131,CM27WOM_39,clause31-s1,sub,e la poesia di-,96.012,96.571
+132,CM27WOM_39,lau,?,[l],96.571,96.953
+133,CM27WOM_39,clause31-s2,sub,io il Natale non lo festeggio,96.953,97.884
+134,CM27WOM_39,clause32-s1,sub,perche' non credo quindi,97.884,98.889
+135,CM27WOM_39,len,f,:::i,98.889,99.038
+136,CM27WOM_39,lau,?,[l],99.038,100.835
+137,CM27WOM_39,clause13_exp-s1,exp,"""he sei poco credibile""",100.835,102.013
+138,CM27WOM_39,ove,?,[],102.013,102.79
+139,CM27WOM_39,clause14_exp-s1,exp,"""persone che si siede a tavola e mangia""",102.79,104.353
+140,CM27WOM_39,noise,?,{noise},104.353,104.709
+141,CM27WOM_39,sil,?,(.),104.709,104.885
+142,CM27WOM_39,clause33-s1,sub,si,104.885,105.293
+143,CM27WOM_39,silV-e,?,(.)v,105.293,105.526
+144,CM27WOM_39,clause15_exp-s1,exp,"""he quello non e' feste""",105.526,106.357
+145,CM27WOM_39,ove,?,[],106.357,106.936
+146,CM27WOM_39,clause33-s2,sub,perche' scusa non devo mangiare?,106.936,108.147
+147,CM27WOM_39,ove,?,[],108.147,108.584
+148,CM27WOM_39,lau,?,[l],108.584,109.428
+149,CM27WOM_39,clause34-s1,sub,scusa non ho capito allora chi non crede deve morire di fame?,109.428,112.043
+150,CM27WOM_39,noise,?,{noise},112.043,112.64
+151,CM27WOM_39,lau,?,[l],112.64,113.196
+152,CM27WOM_39,clause16_exp-s1,exp,"""vabbe' {}""",113.196,113.802
+153,CM27WOM_39,sil_exp,?,(.)_exp,113.802,114.058
+154,CM27WOM_39,clause17_exp-s1,exp,"""che centra?"" ",114.058,114.742
+155,CM27WOM_39,clause18_exp-s1,exp,"""tu ti se""",114.742,114.985
+156,CM27WOM_39,ove,?,[],114.985,115.513
+157,CM27WOM_39,clause18_exp-s2,exp,"""festegg""",115.513,116.153
+158,CM27WOM_39,clause35-s1,sub,no io no non fes- cioe' io quando mi siedo a tavola non e' che festeggio,116.153,118.597
+159,CM27WOM_39,clause36-s1,sub,io mangio perche' devo nutrirmi,118.597,119.946
+160,CM27WOM_39,len_exp,?,:::e_exp,119.946,120.441
+161,CM27WOM_39,ove,?,[],120.441,120.885
+162,CM27WOM_39,clause19_exp-s1,exp,"""nessuno ti sta creden""",120.885,121.877
+163,CM27WOM_39,len,s,:::e,121.877,122.211
+164,CM27WOM_39,clause37-s1,sub,e vabbe',122.211,123.021
+165,CM27WOM_39,noise,?,{noise},123.021,123.351
+166,CM27WOM_39,ove,?,[],123.351,123.913
+167,CM27WOM_39,clause20_exp-s1,exp,"""non lo apri?""",123.913,124.501
+168,CM27WOM_39,clause21_exp-s1,exp,"""non lo pretendi?""",124.501,125.16
+169,CM27WOM_39,clause38-s1,sub,quale regalo?,125.16,125.815
+170,CM27WOM_39,clause39-s1,sub,no,125.815,126.078
+171,CM27WOM_39,sil,?,(.),126.078,126.329
+172,CM27WOM_39,clause39-s2,sub,assolutamente non pretendo il regalo,126.329,128.145
+173,CM27WOM_39,clause22_exp-s1,exp,"""e' vero?""",128.145,128.779
+174,CM27WOM_39,sil_exp,?,(.)_exp,128.779,129.073
+175,CM27WOM_39,clause23_exp-s1,exp,"""ti devo credere?""",129.073,129.74
+176,CM27WOM_39,sil_exp,?,(.)_exp,129.74,130.307
+177,CM27WOM_39,clause23_exp-s2,exp,"""si?""",130.307,130.522
+178,CM27WOM_39,len_exp,?,:::i_exp,130.522,130.697
+179,CM27WOM_39,sil_exp,?,(.)_exp,130.697,131.644
+180,CM27WOM_39,clause24_exp-s1,exp,"""veramente?""",131.644,132.246
+181,CM27WOM_39,clause40-s1,sub,no e' vera,132.246,133.01
+182,CM27WOM_39,ove,?,[],133.01,134.046
+183,CM27WOM_39,sil_exp,?,(.)_exp,134.046,134.486
+184,CM27WOM_39,clause25_exp-s1,exp,"""ah bravo""",134.486,135.026
+185,CM27WOM_39,silV-e,?,(.)v,135.026,136.957
+186,CM27WOM_39,noise,?,{noise},136.957,137.47
+187,CM27WOM_39,clause26_exp-s1,exp,"""vai in chiesa la domenica?""",137.47,138.374
+188,CM27WOM_39,silV-s,?,(.)v,138.374,139.19
+189,CM27WOM_39,clause41-s1,sub,no assolutamente no,139.19,140.126
+190,CM27WOM_39,sil,?,(.),140.126,141.075
+191,CM27WOM_39,clause42-s1,sub,ma sono anni che non vado in chiesa,141.075,142.438
+192,CM27WOM_39,sil,?,(.),142.438,142.816
+193,CM27WOM_39,clause43-s1,sub,come anni che,142.816,143.352
+194,CM27WOM_39,len,f,:::e,143.352,143.927
+195,CM27WOM_39,clause44-s1,sub,che non mi confesso,143.927,144.751
+196,CM27WOM_39,clause45-s1,sub,tipo anni- ma pure ad esempio pure quando capita qualche evento in particolare,144.751,148.045
+197,CM27WOM_39,clause46-s1,sub,tipo,148.045,148.353
+198,CM27WOM_39,len,f,:::o,148.353,148.579
+199,CM27WOM_39,sil,?,(.),148.579,149.054
+200,CM27WOM_39,clause46-s2,sub,non so,149.054,149.403
+201,CM27WOM_39,len,f,:::o,149.403,149.67
+202,CM27WOM_39,clause46-s3,sub,"qualche matrimonio, qualche battesimo anche di",149.67,151.252
+203,CM27WOM_39,len,f,:::i,151.252,151.441
+204,CM27WOM_39,clause46-s4,sub,mio nipote cosi' non ci vado in chiesa,151.441,153.009
+205,CM27WOM_39,sil,?,(.),153.009,153.602
+206,CM27WOM_39,clause47-s1,sub,ma per coerenza piu' che altro,153.602,154.78
+207,CM27WOM_39,clause48-s1,sub,perche' alla fine,154.78,155.562
+208,CM27WOM_39,sil,?,(.),155.562,156.08
+209,CM27WOM_39,clause48-s2,sub,che c' vac a fa',156.08,156.893
+210,CM27WOM_39,clause27_exp-s1,exp,"""resti fuori o non entri proprio?""",156.893,158.796
+211,CM27WOM_39,clause49-s1,sub,no no non cioe',158.796,159.585
+212,CM27WOM_39,fil,?,:m,159.585,159.87
+213,CM27WOM_39,ove,?,[],159.87,160.219
+214,CM27WOM_39,clause49-s2,sub,dissocio proprio da questa,160.219,161.194
+215,CM27WOM_39,len,f,:::a,161.194,161.448
+216,CM27WOM_39,clause49-s3,sub,da questa cosa,161.448,161.994
+217,CM27WOM_39,clause28_exp-s1,exp,"""vai direttamente al ristorante""",161.994,163.059
+218,CM27WOM_39,clause50-s1,sub,come pure per esempio la cena di Pasqua non faccio la preghiera ovviamente,163.059,165.924
+219,CM27WOM_39,clause51-s1,sub,mi- vengo a tavola quando e' pronto,165.924,167.552
+220,CM27WOM_39,clause52-s1,sub,ma,167.552,167.787
+221,CM27WOM_39,sil,?,(.),167.787,168.027
+222,CM27WOM_39,clause52-s2,sub,{} riallacciarmi al discorso di prima vengo perche' devo mangiare,168.027,170.429
+223,CM27WOM_39,clause53-s1,sub,non per altro,170.429,171.224
+224,CM27WOM_39,?,?,(.),171.224,171.555
+225,CM27WOM_39,clause54-s1,sub,posso pure tranquillamente mangiare a parte a pa,171.555,173.344
+226,CM27WOM_39,len,f,:::a,173.344,173.806
+227,CM27WOM_39,clause54-s2,sub,diciamo,173.806,174.15
+228,CM27WOM_39,len,f,:::o,174.15,174.329
+229,CM27WOM_39,sil,?,(.),174.329,174.865
+230,CM27WOM_39,clause54-s3,sub,distaccato dalla tavola,174.865,175.849
+231,CM27WOM_39,clause55-s1,sub,non e' quello il problema,175.849,176.871
+232,CM27WOM_39,noise,?,{noise},176.871,177.753
+233,CM27WOM_39,clause29_exp-s1,exp,"""e perche' non credi?""",177.753,179.12
+234,CM27WOM_39,silV-s,?,(.)v,179.12,180.223
+235,CM27WOM_39,fil,?,:e,180.223,180.505
+236,CM27WOM_39,clause56-s1,sub,perche' comunque alla fine,180.505,181.555
+237,CM27WOM_39,len,f,:::e,181.555,181.697
+238,CM27WOM_39,clause56-s2,sub,a parte che,181.697,182.234
+239,CM27WOM_39,len,f,:::e,182.234,182.681
+240,CM27WOM_39,len,s,:::s,182.681,182.994
+241,CM27WOM_39,clause56-s3,sub,studiando quello che studio quindi,182.994,184.561
+242,CM27WOM_39,len,f,:::i,184.561,184.986
+243,CM27WOM_39,sil,?,(.),184.986,185.321
+244,CM27WOM_39,clause56-s4,sub,credo piu' nella scienza,185.321,186.31
+245,CM27WOM_39,clause57-s1,sub,{} in realta' non sono ateo,186.31,187.475
+246,CM27WOM_39,clause58-s1,sub,sono agnostico,187.475,188.365
+247,CM27WOM_39,sil,?,(.),188.365,189.255
+248,CM27WOM_39,clause58-s2,sub,in questo senso,189.255,190.108
+249,CM27WOM_39,clause59-s1,sub,non e' che no- no- io credo in una in una forma superiore,190.108,192.906
+250,CM27WOM_39,clause60-s1,sub,pero',192.906,193.151
+251,CM27WOM_39,sil,?,(.),193.151,193.494
+252,CM27WOM_39,clause61-s2,sub,non credo nella,193.494,194.138
+253,CM27WOM_39,len,f,:::a,194.138,194.364
+254,CM27WOM_39,clause61-s3,sub,nella religione cattolica,194.364,195.226
+255,CM27WOM_39,clause62-s1,sub,non credo nel cristianesimo,195.226,196.361
+256,CM27WOM_39,clause63_s1,sub,non credo,196.361,196.776
+257,CM27WOM_39,len,f,:::o,196.776,197.054
+258,CM27WOM_39,sil,?,(.),197.054,197.477
+259,CM27WOM_39,clause63-s2,sub,in Dio,197.477,197.981
+260,CM27WOM_39,clause64-s1,sub,non credo,197.981,198.471
+261,CM27WOM_39,len,f,:::o,198.471,198.754
+262,CM27WOM_39,clause64-s2,sub,in Gesu',198.754,199.126
+263,CM27WOM_39,clause65-s1,sub,pero' credo in qua-  qualcosa di superiore ci sia,199.126,201.18
+264,CM27WOM_39,sil,?,(.),201.18,201.522
+265,CM27WOM_39,clause66-s1,sub,pero' non e' quello che,201.522,202.151
+266,CM27WOM_39,len,f,:::e,202.151,202.306
+267,CM27WOM_39,clause66-s2,sub,vogliono farci credere secondo me,202.306,203.799
+268,CM27WOM_39,sil,?,(.),203.799,203.922
+269,CM27WOM_39,clause66-s3,sub,ovviamente,203.922,204.487
+270,CM27WOM_39,silV-e,?,(.)v,204.487,205.018
+271,CM27WOM_39,clause30_exp-s1,exp,"""e allora sei ateo non sei agno""",205.018,206.449
+272,CM27WOM_39,clause68-s1,sub,no,206.449,206.733
+273,CM27WOM_39,sil,?,(.),206.733,206.855
+274,CM27WOM_39,fil,?,:e,206.855,206.959
+275,CM27WOM_39,clause68-s2,sub,agnostico,206.959,207.642
+276,CM27WOM_39,sil,?,(.),207.642,207.943
+277,CM27WOM_39,clause68-s3,sub,cioe',207.943,208.169
+278,CM27WOM_39,len,f,:::n,208.169,208.4
+279,CM27WOM_39,clause68-s4,sub,non- i- e- ateo significa che tu,208.4,209.945
+280,CM27WOM_39,fil,?,:e,209.945,210.166
+281,CM27WOM_39,ove,?,[],210.166,210.325
+282,CM27WOM_39,clause31_exp-s1,exp,"""credi in Dio""",210.325,211.003
+283,CM27WOM_39,clause69-s1,sub,no no cr- credi in qualsiasi altra cosa,211.003,212.796
+284,CM27WOM_39,sil,?,(.),212.796,213.433
+285,CM27WOM_39,clause32_exp-s1,exp,"""e ateo e' che non si crede in Dio e agnostico che non si crede in niente"" ",213.433,217.323
+286,CM27WOM_39,sil,?,(.),217.323,217.737
+287,CM27WOM_39,clause33_exp-s1,exp,"""perche' a e` {} e e""",217.737,220.096
+288,CM27WOM_39,sil_exp,?,(.)_exp,220.096,220.507
+289,CM27WOM_39,clause33_exp-s2,exp,teo e' teus che ,220.507,221.613
+290,CM27WOM_39,fil_exp,?,:e_exp,221.613,221.811
+291,CM27WOM_39,clause33_exp-s3,exp,"""che {}""",221.811,222.644
+292,CM27WOM_39,clause70-s1,sub,vabbe' allora  non lo so,222.644,223.675
+293,CM27WOM_39,clause71-s1,sub,magari tu se- sei sicuramente piu' prava di me su questo,223.675,226.309
+294,CM27WOM_39,ove,?,[],226.309,227.531
+295,CM27WOM_39,clause72-s1,sub,quello comunque in pratica non so se sono ateo o agnostico,227.531,229.873
+296,CM27WOM_39,clause73-s1,sub,pero',229.873,230.184
+297,CM27WOM_39,sil,?,(.),230.184,230.523
+298,CM27WOM_39,fil,?,:e,230.523,230.834
+299,CM27WOM_39,clause73-s2,sub,non credo in Dio,230.834,231.724
+300,CM27WOM_39,clause74-s1,sub,non credo,231.724,232.148
+301,CM27WOM_39,len,f,:::o,232.148,232.383
+302,CM27WOM_39,clause74-s2,sub,in Gesu' e tutto,232.383,233.24
+303,CM27WOM_39,len,f,:::o,233.24,233.903
+304,CM27WOM_39,clause74-s3,sub,compagnia cantando,233.903,234.787
+305,CM27WOM_39,clause75-s1,sub,pero' credo in qua- qualcosa di superiore ci sia,234.787,237.406
+306,CM27WOM_39,sil,?,(.),237.406,237.827
+307,CM27WOM_39,clause76-s1,sub,pero' non e' quello che vogliono farci credere,237.827,239.654
+308,CM27WOM_39,clause77-s1,sub,cioe' non e' quello scritto nella Bibbia in pratica,239.654,241.434
+309,CM27WOM_39,silV-e,?,(.)v,241.434,242.35
+310,CM27WOM_39,clause34_exp-s1,exp,"""ok""",242.35,242.856
+311,CM27WOM_39,sil_exp,?,(.)_exp,242.856,243.432
+312,CM27WOM_39,clause35_exp-s1,exp,"""quanto"" ",243.432,243.71
+313,CM27WOM_39,sil_exp,?,(.)_exp,243.71,243.938
+314,CM27WOM_39,clause35_exp-s2,exp,"""abbiamo raggiunto?""",243.938,244.81
+315,CM27WOM_39,fil,?,:e,244.81,245.299
+316,CM27WOM_39,ove,?,[],245.299,247.029
+317,CM27WOM_39,sil,?,(.),247.029,247.175
+318,CM27WOM_39,clause78-s1,sub,hai visto hai trovato subito il,247.175,248.47
+319,CM27WOM_39,len,f,:::l,248.47,248.881
+320,CM27WOM_39,silV-e,?,(.)v,248.881,249.052
+321,CM27WOM_39,clause36_exp-s1,exp,"""l'argome""",249.052,249.533
+322,CM27WOM_39,ove,?,[],249.533,249.699
